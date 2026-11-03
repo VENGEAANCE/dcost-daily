@@ -11,3 +11,4 @@ The site's favicon uses that battery mark, and all page footers use the establis
 Validation: real Beehiiv form at 1280 and 390 widths, email field fits the frame, hosted fallback remains visible with Beehiiv blocked, and the fallback URL is correct. No subscriber was created. Existing route, calculator, charger filter, reading persistence/focus and fetch-error tests pass at both widths.
 
 Screenshots: [1280](newsletter-1280.png), [390](newsletter-390.png), [blocked embed at 390](newsletter-blocked-390.png).
+The newsletter hash target also follows asynchronous digest layout: a resize observer keeps the explicitly requested signup section in place as lazy thumbnails resolve. Any user wheel, touch, pointer, keyboard or hash navigation disconnects it immediately. A delayed-digest regression check passes at both widths and verifies that manual navigation is not pulled back to signup by a later layout change.
