@@ -12,3 +12,5 @@ const d=document.querySelector(".disc"),m=document.querySelector(".menu");if(d)d
 // Footer disclosure: static HTML carries the Associates line; swap to the fallback if AMAZON_TAG is ever emptied.
 (function(){const tagged=!!((CONFIG.AMAZON_TAG||"").trim());if(tagged)return;addEventListener("DOMContentLoaded",()=>{const dt=typeof CHARGER_PRICE_DATE!=="undefined"?CHARGER_PRICE_DATE:"Oct 19, 2026";
  document.querySelectorAll(".amz-f").forEach(p=>p.textContent="Some links may become affiliate links. Prices as of "+dt+".")})})();
+// Full Charge: savings are mint only when the EV actually saves money (calculator card 04).
+(function(){const sv=document.getElementById("sv");if(!sv||!("MutationObserver" in window))return;const t=()=>sv.classList.toggle("neg",sv.textContent.trim().startsWith("-"));new MutationObserver(t).observe(sv,{childList:true,characterData:true,subtree:true});t()})();
