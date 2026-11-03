@@ -1,13 +1,24 @@
-// Requires CONFIG (config.js loaded first). Newsletter switches on when BEEHIIV_EMBED_URL is set (full URL or bare Beehiiv form id).
-// The beehiiv form is framed at the card's width (no beehiiv embed.js, which forced a fixed 560px width).
-(function(){const v=(CONFIG.BEEHIIV_EMBED_URL||"").trim();if(v){const src=/^https?:/.test(v)?v:"https://subscribe-forms.beehiiv.com/"+v;
-document.querySelectorAll(".nl").forEach(b=>{b.classList.add("on");b.innerHTML='<div class="bh"><iframe src="'+src+'" class="beehiiv-embed" data-test-id="beehiiv-embed" title="Subscribe to dcost daily" frameborder="0" scrolling="no"></iframe></div><p class="nlnote">Trouble with the form? <a href="https://dcostdaily.beehiiv.com/subscribe" target="_blank" rel="noopener">Subscribe on beehiiv</a>.</p>'});
-const frames=()=>document.querySelectorAll(".nl iframe");
-addEventListener("message",e=>{if(e.origin!=="https://subscribe-forms.beehiiv.com")return;const t=e.data&&e.data.type,p=(e.data&&e.data.payload)||{};
- frames().forEach(f=>{if(f.contentWindow!==e.source)return;
-  if(t==="beehiiv:child-loaded")f.contentWindow.postMessage({type:"beehiiv:parent-loaded",payload:{handlesRedirect:false}},"*");
-  else if((t==="beehiiv:styles"||t==="beehiiv:challenge")&&p.height){const h=parseInt(p.height,10);if(h>0)f.style.height=h+"px";f.parentNode.classList.toggle("chal",t==="beehiiv:challenge")}
-  else if(t==="beehiiv:challenge-resolved")f.parentNode.classList.remove("chal")})})}
+// Use Beehiiv's current v3 embed; keep the static signup link independent.
+(function(){
+const value = (CONFIG.BEEHIIV_EMBED_URL || '').trim();
+const formId = value.match(/[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}/i)?.[0];
+if (formId) {
+ document.querySelectorAll('.nl-embed').forEach((container) => {
+  const observer = new MutationObserver(() => {
+   const frame = container.querySelector('iframe');
+   if (!frame) return;
+   frame.title = 'Subscribe to dcost daily';
+   frame.classList.add('beehiiv-embed');
+   observer.disconnect();
+  });
+  observer.observe(container, {childList: true, subtree: true});
+  const loader = document.createElement('script');
+  loader.async = true;
+  loader.src = 'https://subscribe-forms.beehiiv.com/v3/loader.js';
+  loader.dataset.beehiivForm = formId;
+  container.append(loader);
+ });
+}
 const d=document.querySelector(".disc"),m=document.querySelector(".menu");
 if(d&&m){
  m.id="site-menu";m.setAttribute("aria-label","Site navigation");
