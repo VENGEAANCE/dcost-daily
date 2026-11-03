@@ -1,0 +1,99 @@
+<!doctype html><html lang=en data-theme="dark"><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>EV vs gas cost calculator · dcost daily</title><meta name="description" content="What an EV really costs vs a gas car per month and per year, using EPA efficiency ratings and EIA electricity and gas prices."><link rel="canonical" href="https://dcostdaily.com/calculator"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel=stylesheet href="/style.css?v=20261020a"></head><body><header class="hd"><a class="wm" href="/">dcost daily</a><div class="hr"><a class="pill o" href="/#newsletter">Subscribe</a><button class="disc" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 4h12M2 8h12M2 12h12" stroke="#fff" stroke-width="1.5"/></svg></button></div></header><nav class="menu"><a href="/">Today</a><a href="/archive">Archive</a><a href="/calculator">Calculator</a><a href="/ev-cost/">By state</a><a href="/compare/">EV vs gas</a><a href="/chargers">Chargers</a><a href="/#newsletter">Newsletter</a></nav><div class="shell"><nav class="side"><a class="" href="/">Today</a><a class="" href="/archive">Archive</a><a class="on" href="/calculator">Calculator</a><a class="" href="/ev-cost/">By state</a><a class="" href="/compare/">EV vs gas</a><a class="" href="/chargers">Chargers</a><a class="" href="/#newsletter">Newsletter</a></nav><div class="main"><section class="hero"><h1>EV vs gas<br><span style="color:#ffffff99">what it really costs</span></h1></section>
+<div class="shb" id="shb" hidden></div>
+<section class="sec" style="padding-top:40px"><p class="eyebrow">Inputs</p><h2>Your cars<span>Every default is editable.</span></h2><p style="color:#ffffff99;max-width:520px;margin:-16px 0 32px">Efficiency figures are EPA combined ratings from <a class="lnk" href="https://www.fueleconomy.gov">fueleconomy.gov</a>. Payment, insurance and maintenance start at 0 so you enter your own.</p>
+<div class="cols"><div class="cardgrid" style="grid-template-columns:1fr"><div class="colh">EV</div><div class="fld"><select id="evp"></select><label>Vehicle</label></div><div class="fld"><input id="evEff" type="number" step="0.1" value="" placeholder=" "><label>Efficiency (kWh per 100 mi)</label></div><div class="fld"><input id="evPay" type="number" step="1" value="0" placeholder=" "><label>Payment $/mo</label></div><!-- Refinance hook: hidden until CONFIG.REFINANCE_URL is set in config.js (no program approved yet). --><p class="note refi" data-pay="evPay" hidden></p><div class="fld"><input id="evIns" type="number" step="1" value="0" placeholder=" "><label>Insurance $/mo</label></div><div class="fld"><input id="evMnt" type="number" step="1" value="0" placeholder=" "><label>Maintenance $/mo</label></div></div>
+<div class="cardgrid" style="grid-template-columns:1fr"><div class="colh">Gas</div><div class="fld"><select id="gp"></select><label>Vehicle</label></div><div class="fld"><input id="gMpg" type="number" step="0.1" value="" placeholder=" "><label>Fuel economy (MPG)</label></div><div class="fld"><input id="gPay" type="number" step="1" value="0" placeholder=" "><label>Payment $/mo</label></div><!-- Refinance hook: same switch, CONFIG.REFINANCE_URL. --><p class="note refi" data-pay="gPay" hidden></p><div class="fld"><input id="gIns" type="number" step="1" value="0" placeholder=" "><label>Insurance $/mo</label></div><div class="fld"><input id="gMnt" type="number" step="1" value="0" placeholder=" "><label>Maintenance $/mo</label></div></div></div>
+<p class="note" id="srcline" style="margin:12px 4px 24px"></p>
+<div class="cardgrid" style="grid-template-columns:1fr"><div class="fld"><select id="st"><option value="">US average</option></select><label>Your state (fills both prices)</label></div><p class="note" id="stnote">Pick a state to load its average home electricity price and regular gas price. <a href="/ev-cost/">See every state ranked</a>.</p>
+<div class="fld"><input id="mi" type="number" step="1" value="1000" placeholder=" "><label>Miles per month (your estimate)</label></div>
+<div class="fld"><input id="kwh" type="number" step="0.0001" value="0.1831" placeholder=" "><label>Electricity $/kWh</label></div><p class="note" id="kwhnote">Default 0.1831 is the US average residential price for July 2026, <a href="https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a">EIA Electric Power Monthly, Table 5.6.A</a>. Your bill has your real rate.</p>
+<div class="fld"><input id="gal" type="number" step="0.001" value="4.331" placeholder=" "><label>Gas $/gal</label></div><p class="note" id="galnote">Default 4.331 is the US average regular retail price for the week of Oct 12, 2026, <a href="https://www.eia.gov/dnav/pet/pet_pri_gnd_a_epmr_pte_dpgal_w.htm">EIA weekly retail gasoline by area</a></p></div></section>
+<section class="sec"><p class="eyebrow">Results</p><h2>Side by side<span>Monthly and yearly, with savings.</span></h2>
+<div class="cards"><div class="card"><div class="cm"><span>01</span><span>Energy</span></div><div class="big"><span id="e1"></span> vs <span id="g1"></span><small>EV charging vs gas, per month</small></div></div>
+<div class="card"><div class="cm"><span>02</span><span>Monthly</span></div><div class="big"><span id="em"></span> vs <span id="gm"></span><small>EV total vs gas total, per month</small></div></div>
+<div class="card"><div class="cm"><span>03</span><span>Yearly</span></div><div class="big"><span id="ey"></span> vs <span id="gy"></span><small>EV total vs gas total, per year</small></div></div>
+<div class="card"><div class="cm"><span>04</span><span>Savings</span></div><div class="big"><span id="sv"></span><small>EV savings</small></div></div></div>
+<div class="res" id="result" aria-live="polite"><p class="eyebrow">Your result</p><p class="res-h" id="res-h"></p><p class="res-s" id="res-s"></p>
+<div class="ctas res-b"><a class="pill w" id="res-x" target="_blank" rel="noopener">Post it on X</a><button class="pill s" id="res-c" type="button">Copy link</button><a class="pill s" id="res-d" download="dcost-daily-result.png">Download image</a></div>
+<p class="note" id="res-n">The link opens this calculator with your exact numbers, so anyone can check the math or swap in theirs.</p></div>
+<section class="picks" id="picks" aria-labelledby="pk-h"><p class="eyebrow">Home charger picks</p><h3 id="pk-h">Charge at home</h3><p class="pk-math" id="pk-math"></p><div class="chgs" id="pk-list"></div><p class="amz-d" id="pk-d"></p><a class="pk-all" href="/chargers">Compare all three on one page <span aria-hidden="true">→</span></a></section>
+<div class="aff" id="aff"></div></section></div></div><footer><div class="fg"><div><h4>Site</h4><a href="/">Today</a><a href="/archive">Archive</a><a href="/calculator">Calculator</a><a href="/ev-cost/">EV cost by state</a><a href="/compare/">Tesla vs gas matchups</a><a href="/chargers">Home charger picks</a><a href="/#newsletter">Newsletter</a></div><div><h4>Follow @dcostaverage</h4><a href="https://x.com/dcostaverage">@dcostaverage</a><a href="/#newsletter">Daily email</a></div><div><h4>Sources</h4><a href="https://www.fueleconomy.gov">fueleconomy.gov (EPA)</a><a href="https://www.eia.gov/electricity/monthly/">EIA Electric Power Monthly</a><a href="https://www.eia.gov/petroleum/gasdiesel/">EIA gasoline prices</a></div></div><p class="amz-f">As an Amazon Associate I earn from qualifying purchases.</p><div class="copy">© 2026 dcost daily · working name</div><svg class="huge" viewBox="0 0 1000 150" preserveAspectRatio="xMidYMid meet"><text x="500" y="128" text-anchor="middle" textLength="990" lengthAdjust="spacingAndGlyphs" font-family="ui-sans-serif,system-ui,sans-serif" font-size="150" font-weight="500" fill="none" stroke="#ffffff66" stroke-width="1">DCOSTDAILY</text></svg></footer><script src="/config.js?v=20261020a"></script><script src="/ui.js?v=20261020a"></script><script src="/chargers.js?v=20261020a"></script><script src="/vehicles.js?v=20261020a"></script><script>
+// EV / GAS lists: vehicles.js, generated by scripts/gen_compare.py from data/epa.json (EPA fueleconomy.gov, 2026 model year).
+const $=id=>document.getElementById(id),n=id=>+$(id).value||0,f=x=>"$"+Math.round(x).toLocaleString();
+EV.forEach((v,i)=>$("evp").add(new Option(v[0]+": "+v[1]+" kWh/100mi",i)));GAS.forEach((v,i)=>$("gp").add(new Option(v[0]+": "+v[1]+" MPG"+(v[4]?", premium":""),i)));
+const lnk=id=>'<a href="https://www.fueleconomy.gov/feg/PowerSearch.do?action=noform&path=1&year1=2026&year2=2026&id='+id+'">fueleconomy.gov</a>';
+function src(){const e=EV[$("evp").value],g=GAS[$("gp").value];$("srcline").innerHTML="EPA combined: "+e[0]+" "+e[1]+" kWh/100mi; "+g[0]+" "+g[1]+" MPG"+(g[4]?" on premium":"")+". Source: "+lnk(e[2])+", "+lnk(g[2])+"."}
+let R=null;const isP=()=>!!GAS[$("gp").value][4];
+$("evp").onchange=()=>{$("evEff").value=EV[$("evp").value][1];src();calc()};
+$("gp").onchange=()=>{$("gMpg").value=GAS[$("gp").value][1];src();if(R)applyGas();calc()};
+$("evEff").value=EV[0][1];$("gMpg").value=GAS[0][1];src();
+function calc(){const m=n("mi"),e=m*n("evEff")/100*n("kwh"),g=n("gMpg")?m/n("gMpg")*n("gal"):0;
+const em=e+n("evPay")+n("evIns")+n("evMnt"),gm=g+n("gPay")+n("gIns")+n("gMnt");
+$("e1").textContent=f(e);$("g1").textContent=f(g);$("em").textContent=f(em);$("gm").textContent=f(gm);$("ey").textContent=f(em*12);$("gy").textContent=f(gm*12);
+const s=gm-em,sg=x=>x>=0?f(x):"-"+f(-x);$("sv").textContent=sg(s)+"/mo, "+sg(s*12)+"/yr";picks();result(e,g,em,gm);refi();}
+
+// Home charger picks: turn the user's own miles into charging time, then list the picks (chargers.js).
+function picks(){const m=n("mi"),eff=n("evEff"),ev=EV[$("evp").value],tesla=/tesla/i.test(ev?ev[0]:"");
+ const day=m*12/365,l1=miPerHr(1.44,eff),l2=Math.min(...CHARGERS.map(c=>miPerHr(c.amps*0.24,eff)));
+ $("pk-math").innerHTML=m>0&&eff>0?`Your ${Math.round(m).toLocaleString()} mi a month is about <b>${Math.round(day)} mi a day</b>. A regular wall outlet adds about ${Math.round(l1)} mi per hour, so that's <b>${hrs(day/l1)}</b> plugged in every night. Any of these puts it back in <b>${hrs(day/l2)}</b>.`:"Enter your miles and efficiency above to see how long home charging takes for you.";
+ const list=CHARGERS.slice().sort((a,b)=>tesla?(a.plug==="NACS"?-1:b.plug==="NACS"?1:0):(a.plug==="J1772"?-1:b.plug==="J1772"?1:0));
+ $("pk-list").innerHTML=list.map(c=>chargerCard(c,{eff,tesla})).join("");$("pk-d").textContent=AMZ_DISCLOSE}
+
+// Shareable result. The share link is /share?<inputs>; a Worker (dcostdaily-share) renders its preview card
+// and sends people on to this page with the same inputs, so the numbers they see are the ones you shared.
+// Same wording rules as the Worker (/workspace/dcost-daily-share-worker/index.js); change both together.
+const nm=(list,sel,inp,si)=>{const v=list[$(sel).value];return Math.abs(n(inp)-v[1])<0.05?v[si]:null};
+const an=w=>/^(an? )/.test(w)?w:(/^([AEIOU]|X\d|RX|F-|E )/.test(w)?"an ":"a ")+w;
+function shareQ(){const q=new URLSearchParams(),ev=EV[$("evp").value],g=GAS[$("gp").value];
+ q.set("ev",ev[3]);q.set("gas",g[3]);if($("st").value)q.set("st",$("st").value.toLowerCase());
+ q.set("mi",Math.round(n("mi")));q.set("kwh",(+n("kwh").toFixed(4)).toString());q.set("gal",(+n("gal").toFixed(3)).toString());
+ if(Math.abs(n("evEff")-ev[1])>=0.05)q.set("eff",n("evEff"));if(Math.abs(n("gMpg")-g[1])>=0.05)q.set("mpg",n("gMpg"));
+ [["evPay","ep"],["evIns","ei"],["evMnt","emt"],["gPay","gpy"],["gIns","gi"],["gMnt","gmt"]].forEach(([id,k])=>{if(n(id))q.set(k,Math.round(n(id)))});return q}
+function where(){const k=$("st").value;if(k&&R&&R.states[k]){const s=R.states[k];const same=Math.abs(n("kwh")-s.cents/100)<1e-4&&Math.abs(n("gal")-(isP()?s.gas.premium:s.gas.usd))<1e-3;return same?"in "+s.name:"in "+s.name+" at my rates"}
+ if(R&&Math.abs(n("kwh")-R.us_cents/100)<1e-4&&Math.abs(n("gal")-(isP()?R.us_premium:R.us_gas))<1e-3)return "at US average prices";return "at my rates"}
+function result(e,g,em,gm){const s=gm-em,ev=nm(EV,"evp","evEff",4)||"an EV at "+n("evEff")+" kWh/100 mi",gs=nm(GAS,"gp","gMpg",5)||"a "+n("gMpg")+" MPG gas car";
+ const a=s>=0?ev:gs,b=s>=0?gs:ev,cap=w=>w.charAt(0).toUpperCase()+w.slice(1);
+ const h=Math.round(Math.abs(s))<1?`${cap(an(ev))} and ${an(gs)} cost me the same to run ${where()}`:`${cap(an(a))} saves me ${f(Math.abs(s))} a month over ${an(b)} ${where()}`;
+ const extra=n("evPay")+n("evIns")+n("evMnt")+n("gPay")+n("gIns")+n("gMnt")>0;
+ $("res-h").textContent=h+".";
+ $("res-s").textContent=`${f(e)} to charge vs ${f(g)} in gas, ${Math.round(n("mi")).toLocaleString()} mi a month. ${f(Math.abs(s)*12)} a year${extra?", payment, insurance and maintenance included":", fuel only"}.`;
+ const url=location.origin+"/share?"+shareQ().toString();
+ $("res-x").href="https://twitter.com/intent/tweet?"+new URLSearchParams({text:h+". Ran my own numbers:",url,via:"dcostaverage"}).toString();
+ $("res-d").href="/share/card.png?"+shareQ().toString();$("res-c").dataset.url=url}
+$("res-c").onclick=()=>{const u=$("res-c").dataset.url,done=()=>{$("res-c").textContent="Link copied";setTimeout(()=>$("res-c").textContent="Copy link",1800)};
+ if(navigator.clipboard)navigator.clipboard.writeText(u).then(done,()=>prompt("Copy this link",u));else prompt("Copy this link",u)};
+
+// Refinance hook. Turns on when CONFIG.REFINANCE_URL is set (config.js); until then the notes stay hidden.
+function refi(){const u=((typeof CONFIG!=="undefined"&&CONFIG.REFINANCE_URL)||"").trim();document.querySelectorAll(".refi").forEach(p=>{const pay=n(p.dataset.pay);
+ if(!u||pay<=0){p.hidden=true;return}p.hidden=false;p.innerHTML='Paying '+f(pay)+' a month? <a rel="sponsored noopener" target="_blank" href="'+u+'">See if a refinance lowers it</a> (affiliate link).'})}
+
+document.querySelectorAll("input").forEach(i=>i.oninput=calc);
+// URL prefill: ?ev=<slug>&gas=<slug>&state=tx from the SEO pages; share links add mi, kwh, gal and the rest.
+const Q=new URLSearchParams(location.search),qev=EV.findIndex(v=>v[3]===Q.get("ev")),qg=GAS.findIndex(v=>v[3]===Q.get("gas"));
+if(qev>=0){$("evp").value=qev;$("evEff").value=EV[qev][1]}if(qg>=0){$("gp").value=qg;$("gMpg").value=GAS[qg][1]}src();
+const num=k=>{const v=Q.get(k);return v!==null&&v!==""&&isFinite(+v)&&+v>=0?+v:null};
+[["eff","evEff"],["mpg","gMpg"],["mi","mi"],["ep","evPay"],["ei","evIns"],["emt","evMnt"],["gpy","gPay"],["gi","gIns"],["gmt","gMnt"]].forEach(([k,id])=>{const v=num(k);if(v!==null)$(id).value=v});
+calc();
+// State prices (data/rates.json, EIA). ?state=tx (or ?st=tx from a share link) preselects. Premium cars get EIA's premium price.
+let gasNote=()=>{};
+function applyGas(){const k=$("st").value,s=k?R.states[k]:null;$("gal").value=(s?(isP()?s.gas.premium:s.gas.usd):(isP()?R.us_premium:R.us_gas)).toFixed(3);gasNote()}
+fetch("/data/rates.json").then(r=>r.json()).then(D=>{R=D;const S=R.states,ks=Object.keys(S).sort((a,b)=>S[a].name.localeCompare(S[b].name));
+ ks.forEach(k=>$("st").add(new Option(S[k].name+": "+S[k].cents.toFixed(2)+"\u00a2/kWh, $"+S[k].gas.usd.toFixed(2)+"/gal",k)));
+ const wk=new Date(R.gas_week+"T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"}),slug=n=>n.toLowerCase().replace(/[^a-z]+/g,"-").replace(/^-|-$/g,"");
+ gasNote=()=>{const k=$("st").value,s=k?S[k]:null,gr=isP()?"premium":"regular",src=isP()?(R.premium_source||R.gas_source):R.gas_source;
+  $("galnote").innerHTML=(s?(s.gas.own?s.name+" average "+gr:s.gas.area+" average "+gr+" (EIA has no weekly series for "+s.name+")"):"US average "+gr)+", week of "+wk+', <a href="'+src+'">EIA weekly retail gasoline</a>.'};
+ const apply=()=>{const k=$("st").value;if(!k){$("kwh").value=(R.us_cents/100).toFixed(4);applyGas();
+   $("stnote").innerHTML='Pick a state to load its average home electricity price and regular gas price. <a href="/ev-cost/">See every state ranked</a>.';
+   $("kwhnote").innerHTML="US average residential price, "+R.elec_month+', <a href="'+R.elec_source+'">EIA Table 5.6.A</a>. Your bill has your real rate.';calc();return}
+  const s=S[k];$("kwh").value=(s.cents/100).toFixed(4);applyGas();
+  $("stnote").innerHTML='Loaded '+s.name+'. <a href="/ev-cost/'+slug(s.name)+'">Every Tesla trim in '+s.name+'</a>.';
+  $("kwhnote").innerHTML=s.name+" average residential price, "+R.elec_month+', <a href="'+R.elec_source+'">EIA Table 5.6.A</a>. Your bill has your real rate.';calc()};
+ $("st").onchange=apply;const qs=(Q.get("state")||Q.get("st")||"").toUpperCase();if(S[qs])$("st").value=qs;apply();
+ // Share link: its own rates win over the state defaults, and the banner says these are someone else's numbers.
+ const qk=num("kwh"),qgal=num("gal");if(qk!==null){$("kwh").value=qk;$("kwhnote").textContent="Rate from the shared link. Pick a state or type yours."}if(qgal!==null){$("gal").value=qgal;$("galnote").textContent="Gas price from the shared link. Pick a state or type yours."}
+ calc();if(Q.has("shared")){$("shb").hidden=false;$("shb").innerHTML='<p class="eyebrow">Shared result</p><p class="shb-h">'+$("res-h").textContent+'</p><p class="note">These are someone else\'s inputs. Change any field below to run yours. <a href="#result">See their full result</a>.</p>'}
+}).catch(()=>{$("stnote").textContent="State prices didn't load. Type your own rates below; everything still works."});
+// Affiliate links: hidden until set in config.js
+[["TESLA_REFERRAL_URL","Tesla referral"],["EV_INSURANCE_URL","Compare EV insurance"]].forEach(([k,t])=>{if(CONFIG[k])$("aff").insertAdjacentHTML("beforeend",'<a class="pill s" rel="sponsored noopener" target="_blank" href="'+CONFIG[k]+'">'+t+'</a>')});
+if($("aff").children.length)$("aff").insertAdjacentHTML("afterend",'<p class="note">Some links above are referral or affiliate links.</p>');
+</script></body></html>

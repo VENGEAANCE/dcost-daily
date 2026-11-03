@@ -1,0 +1,618 @@
+{
+ "elec_month": "August 2026",
+ "elec_prior_month": "August 2025",
+ "elec_source": "https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a",
+ "us_cents": 18.16,
+ "us_cents_prior": 17.57,
+ "gas_week": "2026-10-26",
+ "gas_source": "https://www.eia.gov/dnav/pet/pet_pri_gnd_a_epmr_pte_dpgal_w.htm",
+ "us_gas": 4.269,
+ "premium_source": "https://www.eia.gov/dnav/pet/pet_pri_gnd_a_epmp_pte_dpgal_w.htm",
+ "us_premium": 5.275,
+ "cities": {
+  "Boston": {
+   "usd": 4.176,
+   "premium": 5.187
+  },
+  "Chicago": {
+   "usd": 4.897,
+   "premium": 6.103
+  },
+  "Cleveland": {
+   "usd": 4.316,
+   "premium": 5.626
+  },
+  "Denver": {
+   "usd": 4.407,
+   "premium": 5.196
+  },
+  "Houston": {
+   "usd": 3.681,
+   "premium": 4.632
+  },
+  "Los Angeles": {
+   "usd": 5.883,
+   "premium": 6.329
+  },
+  "Miami": {
+   "usd": 4.077,
+   "premium": 4.845
+  },
+  "New York City": {
+   "usd": 4.178,
+   "premium": 5.13
+  },
+  "San Francisco": {
+   "usd": 5.856,
+   "premium": 6.389
+  },
+  "Seattle": {
+   "usd": 5.424,
+   "premium": 5.965
+  }
+ },
+ "fetched": "2026-11-03",
+ "states": {
+  "AL": {
+   "name": "Alabama",
+   "cents": 16.33,
+   "cents_prior": 16.26,
+   "gas": {
+    "usd": 3.702,
+    "premium": 4.567,
+    "area": "Gulf Coast (PADD 3)",
+    "own": false
+   }
+  },
+  "AK": {
+   "name": "Alaska",
+   "cents": 29.41,
+   "cents_prior": 27.79,
+   "gas": {
+    "usd": 4.868,
+    "premium": 5.539,
+    "area": "West Coast less California",
+    "own": false
+   }
+  },
+  "AZ": {
+   "name": "Arizona",
+   "cents": 15.05,
+   "cents_prior": 15.09,
+   "gas": {
+    "usd": 4.868,
+    "premium": 5.539,
+    "area": "West Coast less California",
+    "own": false
+   }
+  },
+  "AR": {
+   "name": "Arkansas",
+   "cents": 14.37,
+   "cents_prior": 13.33,
+   "gas": {
+    "usd": 3.702,
+    "premium": 4.567,
+    "area": "Gulf Coast (PADD 3)",
+    "own": false
+   }
+  },
+  "CA": {
+   "name": "California",
+   "cents": 29.75,
+   "cents_prior": 30.92,
+   "gas": {
+    "usd": 5.888,
+    "premium": 6.355,
+    "area": "California",
+    "own": true
+   }
+  },
+  "CO": {
+   "name": "Colorado",
+   "cents": 17.17,
+   "cents_prior": 16.21,
+   "gas": {
+    "usd": 4.458,
+    "premium": 5.198,
+    "area": "Colorado",
+    "own": true
+   }
+  },
+  "CT": {
+   "name": "Connecticut",
+   "cents": 24.51,
+   "cents_prior": 30.17,
+   "gas": {
+    "usd": 4.199,
+    "premium": 5.202,
+    "area": "New England (PADD 1A)",
+    "own": false
+   }
+  },
+  "DE": {
+   "name": "Delaware",
+   "cents": 18.7,
+   "cents_prior": 16.85,
+   "gas": {
+    "usd": 4.251,
+    "premium": 5.138,
+    "area": "Central Atlantic (PADD 1B)",
+    "own": false
+   }
+  },
+  "DC": {
+   "name": "District of Columbia",
+   "cents": 25.98,
+   "cents_prior": 23.18,
+   "gas": {
+    "usd": 4.251,
+    "premium": 5.138,
+    "area": "Central Atlantic (PADD 1B)",
+    "own": false
+   }
+  },
+  "FL": {
+   "name": "Florida",
+   "cents": 14.99,
+   "cents_prior": 15.33,
+   "gas": {
+    "usd": 4.017,
+    "premium": 4.815,
+    "area": "Florida",
+    "own": true
+   }
+  },
+  "GA": {
+   "name": "Georgia",
+   "cents": 15.9,
+   "cents_prior": 15.55,
+   "gas": {
+    "usd": 3.832,
+    "premium": 4.704,
+    "area": "Lower Atlantic (PADD 1C)",
+    "own": false
+   }
+  },
+  "HI": {
+   "name": "Hawaii",
+   "cents": 47.18,
+   "cents_prior": 38.53,
+   "gas": {
+    "usd": 4.868,
+    "premium": 5.539,
+    "area": "West Coast less California",
+    "own": false
+   }
+  },
+  "ID": {
+   "name": "Idaho",
+   "cents": 13.37,
+   "cents_prior": 12.08,
+   "gas": {
+    "usd": 4.458,
+    "premium": 5.117,
+    "area": "Rocky Mountain (PADD 4)",
+    "own": false
+   }
+  },
+  "IL": {
+   "name": "Illinois",
+   "cents": 19.32,
+   "cents_prior": 18.03,
+   "gas": {
+    "usd": 4.269,
+    "premium": 5.374,
+    "area": "Midwest (PADD 2)",
+    "own": false
+   }
+  },
+  "IN": {
+   "name": "Indiana",
+   "cents": 17.02,
+   "cents_prior": 16.21,
+   "gas": {
+    "usd": 4.269,
+    "premium": 5.374,
+    "area": "Midwest (PADD 2)",
+    "own": false
+   }
+  },
+  "IA": {
+   "name": "Iowa",
+   "cents": 17.06,
+   "cents_prior": 15.48,
+   "gas": {
+    "usd": 4.269,
+    "premium": 5.374,
+    "area": "Midwest (PADD 2)",
+    "own": false
+   }
+  },
+  "KS": {
+   "name": "Kansas",
+   "cents": 15.47,
+   "cents_prior": 14.65,
+   "gas": {
+    "usd": 4.269,
+    "premium": 5.374,
+    "area": "Midwest (PADD 2)",
+    "own": false
+   }
+  },
+  "KY": {
+   "name": "Kentucky",
+   "cents": 13.8,
+   "cents_prior": 13.1,
+   "gas": {
+    "usd": 4.269,
+    "premium": 5.374,
+    "area": "Midwest (PADD 2)",
+    "own": false
+   }
+  },
+  "LA": {
+   "name": "Louisiana",
+   "cents": 12.87,
+   "cents_prior": 12.55,
+   "gas": {
+    "usd": 3.702,
+    "premium": 4.567,
+    "area": "Gulf Coast (PADD 3)",
+    "own": false
+   }
+  },
+  "ME": {
+   "name": "Maine",
+   "cents": 32.11,
+   "cents_prior": 28.14,
+   "gas": {
+    "usd": 4.199,
+    "premium": 5.202,
+    "area": "New England (PADD 1A)",
+    "own": false
+   }
+  },
+  "MD": {
+   "name": "Maryland",
+   "cents": 21.4,
+   "cents_prior": 19.89,
+   "gas": {
+    "usd": 4.251,
+    "premium": 5.138,
+    "area": "Central Atlantic (PADD 1B)",
+    "own": false
+   }
+  },
+  "MA": {
+   "name": "Massachusetts",
+   "cents": 30.48,
+   "cents_prior": 30.55,
+   "gas": {
+    "usd": 4.145,
+    "premium": 5.179,
+    "area": "Massachusetts",
+    "own": true
+   }
+  },
+  "MI": {
+   "name": "Michigan",
+   "cents": 22.99,
+   "cents_prior": 20.73,
+   "gas": {
+    "usd": 4.269,
+    "premium": 5.374,
+    "area": "Midwest (PADD 2)",
+    "own": false
+   }
+  },
+  "MN": {
+   "name": "Minnesota",
+   "cents": 17.2,
+   "cents_prior": 16.89,
+   "gas": {
+    "usd": 4.146,
+    "premium": 5.107,
+    "area": "Minnesota",
+    "own": true
+   }
+  },
+  "MS": {
+   "name": "Mississippi",
+   "cents": 14.43,
+   "cents_prior": 13.61,
+   "gas": {
+    "usd": 3.702,
+    "premium": 4.567,
+    "area": "Gulf Coast (PADD 3)",
+    "own": false
+   }
+  },
+  "MO": {
+   "name": "Missouri",
+   "cents": 16.02,
+   "cents_prior": 15.32,
+   "gas": {
+    "usd": 4.269,
+    "premium": 5.374,
+    "area": "Midwest (PADD 2)",
+    "own": false
+   }
+  },
+  "MT": {
+   "name": "Montana",
+   "cents": 15.57,
+   "cents_prior": 14.29,
+   "gas": {
+    "usd": 4.458,
+    "premium": 5.117,
+    "area": "Rocky Mountain (PADD 4)",
+    "own": false
+   }
+  },
+  "NE": {
+   "name": "Nebraska",
+   "cents": 13.54,
+   "cents_prior": 12.8,
+   "gas": {
+    "usd": 4.269,
+    "premium": 5.374,
+    "area": "Midwest (PADD 2)",
+    "own": false
+   }
+  },
+  "NV": {
+   "name": "Nevada",
+   "cents": 12.72,
+   "cents_prior": 12.54,
+   "gas": {
+    "usd": 4.868,
+    "premium": 5.539,
+    "area": "West Coast less California",
+    "own": false
+   }
+  },
+  "NH": {
+   "name": "New Hampshire",
+   "cents": 27.64,
+   "cents_prior": 24.44,
+   "gas": {
+    "usd": 4.199,
+    "premium": 5.202,
+    "area": "New England (PADD 1A)",
+    "own": false
+   }
+  },
+  "NJ": {
+   "name": "New Jersey",
+   "cents": 24.61,
+   "cents_prior": 24.7,
+   "gas": {
+    "usd": 4.251,
+    "premium": 5.138,
+    "area": "Central Atlantic (PADD 1B)",
+    "own": false
+   }
+  },
+  "NM": {
+   "name": "New Mexico",
+   "cents": 16.51,
+   "cents_prior": 15.98,
+   "gas": {
+    "usd": 3.702,
+    "premium": 4.567,
+    "area": "Gulf Coast (PADD 3)",
+    "own": false
+   }
+  },
+  "NY": {
+   "name": "New York",
+   "cents": 28.65,
+   "cents_prior": 26.64,
+   "gas": {
+    "usd": 4.249,
+    "premium": 5.168,
+    "area": "New York",
+    "own": true
+   }
+  },
+  "NC": {
+   "name": "North Carolina",
+   "cents": 14.95,
+   "cents_prior": 14.59,
+   "gas": {
+    "usd": 3.832,
+    "premium": 4.704,
+    "area": "Lower Atlantic (PADD 1C)",
+    "own": false
+   }
+  },
+  "ND": {
+   "name": "North Dakota",
+   "cents": 13.31,
+   "cents_prior": 12.97,
+   "gas": {
+    "usd": 4.269,
+    "premium": 5.374,
+    "area": "Midwest (PADD 2)",
+    "own": false
+   }
+  },
+  "OH": {
+   "name": "Ohio",
+   "cents": 19.38,
+   "cents_prior": 17.55,
+   "gas": {
+    "usd": 4.38,
+    "premium": 5.532,
+    "area": "Ohio",
+    "own": true
+   }
+  },
+  "OK": {
+   "name": "Oklahoma",
+   "cents": 14.82,
+   "cents_prior": 14.42,
+   "gas": {
+    "usd": 4.269,
+    "premium": 5.374,
+    "area": "Midwest (PADD 2)",
+    "own": false
+   }
+  },
+  "OR": {
+   "name": "Oregon",
+   "cents": 15.92,
+   "cents_prior": 15.85,
+   "gas": {
+    "usd": 4.868,
+    "premium": 5.539,
+    "area": "West Coast less California",
+    "own": false
+   }
+  },
+  "PA": {
+   "name": "Pennsylvania",
+   "cents": 21.77,
+   "cents_prior": 19.93,
+   "gas": {
+    "usd": 4.251,
+    "premium": 5.138,
+    "area": "Central Atlantic (PADD 1B)",
+    "own": false
+   }
+  },
+  "RI": {
+   "name": "Rhode Island",
+   "cents": 28.18,
+   "cents_prior": 26.53,
+   "gas": {
+    "usd": 4.199,
+    "premium": 5.202,
+    "area": "New England (PADD 1A)",
+    "own": false
+   }
+  },
+  "SC": {
+   "name": "South Carolina",
+   "cents": 15.76,
+   "cents_prior": 15.16,
+   "gas": {
+    "usd": 3.832,
+    "premium": 4.704,
+    "area": "Lower Atlantic (PADD 1C)",
+    "own": false
+   }
+  },
+  "SD": {
+   "name": "South Dakota",
+   "cents": 15.15,
+   "cents_prior": 13.9,
+   "gas": {
+    "usd": 4.269,
+    "premium": 5.374,
+    "area": "Midwest (PADD 2)",
+    "own": false
+   }
+  },
+  "TN": {
+   "name": "Tennessee",
+   "cents": 13.42,
+   "cents_prior": 13.09,
+   "gas": {
+    "usd": 4.269,
+    "premium": 5.374,
+    "area": "Midwest (PADD 2)",
+    "own": false
+   }
+  },
+  "TX": {
+   "name": "Texas",
+   "cents": 15.91,
+   "cents_prior": 15.4,
+   "gas": {
+    "usd": 3.632,
+    "premium": 4.478,
+    "area": "Texas",
+    "own": true
+   }
+  },
+  "UT": {
+   "name": "Utah",
+   "cents": 13.31,
+   "cents_prior": 13.62,
+   "gas": {
+    "usd": 4.458,
+    "premium": 5.117,
+    "area": "Rocky Mountain (PADD 4)",
+    "own": false
+   }
+  },
+  "VT": {
+   "name": "Vermont",
+   "cents": 23.84,
+   "cents_prior": 22.1,
+   "gas": {
+    "usd": 4.199,
+    "premium": 5.202,
+    "area": "New England (PADD 1A)",
+    "own": false
+   }
+  },
+  "VA": {
+   "name": "Virginia",
+   "cents": 17.64,
+   "cents_prior": 15.85,
+   "gas": {
+    "usd": 3.832,
+    "premium": 4.704,
+    "area": "Lower Atlantic (PADD 1C)",
+    "own": false
+   }
+  },
+  "WA": {
+   "name": "Washington",
+   "cents": 14.63,
+   "cents_prior": 13.65,
+   "gas": {
+    "usd": 5.203,
+    "premium": 5.747,
+    "area": "Washington",
+    "own": true
+   }
+  },
+  "WV": {
+   "name": "West Virginia",
+   "cents": 16.31,
+   "cents_prior": 15.62,
+   "gas": {
+    "usd": 3.832,
+    "premium": 4.704,
+    "area": "Lower Atlantic (PADD 1C)",
+    "own": false
+   }
+  },
+  "WI": {
+   "name": "Wisconsin",
+   "cents": 19.41,
+   "cents_prior": 18.44,
+   "gas": {
+    "usd": 4.269,
+    "premium": 5.374,
+    "area": "Midwest (PADD 2)",
+    "own": false
+   }
+  },
+  "WY": {
+   "name": "Wyoming",
+   "cents": 14.43,
+   "cents_prior": 14.33,
+   "gas": {
+    "usd": 4.458,
+    "premium": 5.117,
+    "area": "Rocky Mountain (PADD 4)",
+    "own": false
+   }
+  }
+ }
+}

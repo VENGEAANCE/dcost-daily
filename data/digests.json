@@ -1,0 +1,882 @@
+[
+ {
+  "date": "2026-11-03",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla Robotaxi goes unsupervised in Fort Worth",
+    "takeaway": "Fort Worth became Tesla's seventh city with fully unsupervised Robotaxi rides on Nov 2, with a geofence of about 143 square miles centered on downtown.",
+    "source": "Not a Tesla App",
+    "url": "https://www.notateslaapp.com/news/4932/tesla-expands-robotaxi-service-launches-unsupervised-rides-in-fort-worth",
+    "image": "https://www.notateslaapp.com/img/containers/article_images/robotaxi/tesla-robotaxi-geofence-fort-worth-november-2026-2.webp/b3bc43a8602e9507e58514a8d88cd5fd/tesla-robotaxi-geofence-fort-worth-november-2026-2.jpg",
+    "imageAlt": "Tesla Robotaxi goes unsupervised in Fort Worth",
+    "imageCredit": "Not a Tesla App"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Tesla FSD passes 17 billion miles",
+    "takeaway": "Tesla's FSD (Supervised) fleet has now driven more than 17 billion miles, adding about 7 billion since crossing 10 billion in early May.",
+    "source": "Drive Tesla Canada",
+    "url": "https://driveteslacanada.ca/news/tesla-fsd-surpasses-17-billion-miles-driven/",
+    "image": "https://driveteslacanada.ca/wp-content/uploads/2026/10/tesla-fsd-supervised-hands-free-city-scaled.jpg",
+    "imageAlt": "Tesla FSD passes 17 billion miles",
+    "imageCredit": "Drive Tesla Canada"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Cybercab heads out on a European tour",
+    "takeaway": "Tesla's Cybercab starts a 12-city European tour at Auto Zurich on Nov 5, with stops in Germany, Prague, Vienna and more through January 2027.",
+    "source": "Drive Tesla Canada",
+    "url": "https://driveteslacanada.ca/news/tesla-cybercab-europe-tour-2026-nine-stops/",
+    "image": "https://driveteslacanada.ca/wp-content/uploads/2026/10/cybercab-at-night.jpg",
+    "imageAlt": "Cybercab heads out on a European tour",
+    "imageCredit": "Drive Tesla Canada"
+   },
+   {
+    "tag": "SpaceX",
+    "title": "SpaceX reportedly eyes Boost Mobile for Starlink Mobile",
+    "takeaway": "SpaceX is reportedly in talks with EchoStar to buy Boost Mobile or use its network, after AT&T, T-Mobile and Verizon all turned down Musk's capacity requests.",
+    "source": "Drive Tesla Canada",
+    "url": "https://driveteslacanada.ca/news/spacex-boost-mobile-acquisition-starlink-mobile/",
+    "image": "https://driveteslacanada.ca/wp-content/uploads/2026/10/Starlink_Mobile_e3e0b49e13-scaled.jpg",
+    "imageAlt": "SpaceX reportedly eyes Boost Mobile for Starlink Mobile",
+    "imageCredit": "Drive Tesla Canada"
+   },
+   {
+    "tag": "EV",
+    "title": "BYD sold over 300,000 EVs in October",
+    "takeaway": "BYD set a record with more than 300,000 EVs sold in October, more than the entire US sold in the third quarter.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/11/02/byd-sold-more-evs-last-month-than-the-us-did-all-quarter/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/11/BYD-EV-sales-October-record.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "BYD sold over 300,000 EVs in October",
+    "imageCredit": "Electrek"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-30",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla's Cybercab starts riding on Austin interstates",
+    "takeaway": "A rider filmed a Cybercab carrying passengers at 55 mph on an Austin interstate in the rain, as Tesla's registered Texas Robotaxi fleet reached 1,080 vehicles.",
+    "source": "Drive Tesla Canada",
+    "url": "https://driveteslacanada.ca/robotaxi/tesla-cybercab-interstate-robotaxi-rides-austin/",
+    "image": "https://driveteslacanada.ca/wp-content/uploads/2026/09/cybercab.jpg",
+    "imageAlt": "Tesla's Cybercab starts riding on Austin interstates",
+    "imageCredit": "Drive Tesla Canada"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Tesla Robotaxi now gives new riders a free first trip",
+    "takeaway": "The Robotaxi app shows a $0.00 \"First ride on us\" fare for new riders in Houston and Dallas, where the Houston area recently grew from about 25 to 254 square miles.",
+    "source": "Not a Tesla App",
+    "url": "https://www.notateslaapp.com/news/4917/tesla-offers-free-robotaxi-rides-for-first-time-riders",
+    "image": "https://www.notateslaapp.com/img/containers/article_images/robotaxi/robotaxi_rear_screen.jpg/3257c5dc37ca7ed182205ae77ec677a9/robotaxi_rear_screen.jpg",
+    "imageAlt": "Tesla Robotaxi now gives new riders a free first trip",
+    "imageCredit": "Not a Tesla App"
+   },
+   {
+    "tag": "Tesla",
+    "title": "A Tesla update breaks third-party V2L adapters",
+    "takeaway": "Owners report that software 2026.38.5.1 and later stop third-party vehicle-to-load adapters from pulling power, so anyone relying on one may want to hold off updating.",
+    "source": "Not a Tesla App",
+    "url": "https://www.notateslaapp.com/news/4916/tesla-breaks-compatibility-with-third-party-v2l-devices",
+    "image": "https://www.notateslaapp.com/img/containers/article_images/model-y-2025/myp-v2l.webp/292d8ce0d52dad773c5fc0112e625046/myp-v2l.jpg",
+    "imageAlt": "A Tesla update breaks third-party V2L adapters",
+    "imageCredit": "Not a Tesla App"
+   },
+   {
+    "tag": "SpaceX",
+    "title": "FCC moves to open more spectrum for Starlink to phones",
+    "takeaway": "The FCC voted to advance a proposal opening another 482 MHz of spectrum to satellite-to-phone service, giving Starlink Mobile more room to take on the big carriers.",
+    "source": "Teslarati",
+    "url": "https://www.teslarati.com/fcc-green-light-spacex-starlink-mobile-competitor-verizon-att/",
+    "image": "https://www.teslarati.com/wp-content/uploads/2026/10/starlink-phone-mobile-verizon-earth-1000x600.jpg",
+    "imageAlt": "FCC moves to open more spectrum for Starlink to phones",
+    "imageCredit": "Teslarati"
+   },
+   {
+    "tag": "EV",
+    "title": "Waymo picks Toyota's bZ4X for robotaxis in Japan and the UK",
+    "takeaway": "Toyota will build 2027 bZ4X robotaxis with Waymo's driving system at its Takaoka plant, with testing in Japan starting next year and the UK to follow.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/30/waymos-next-robotaxi-will-be-a-toyota-bz4x-destined-for-japan-and-the-uk/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/Waymo_Toyota_bZ4X.jpg?resize=1200,675",
+    "imageAlt": "Waymo picks Toyota's bZ4X for robotaxis in Japan and the UK",
+    "imageCredit": "TechCrunch"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-29",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla confirms it's coming to Vietnam",
+    "takeaway": "A Tesla recruiter says the company is officially entering Vietnam with five open roles, including a charging developer, in a market where VinFast holds about 36% of new car sales.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/28/tesla-vietnam-entry-vinfast/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/10/Tesla-Vietnam.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "Tesla confirms it's coming to Vietnam",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "Tesla",
+    "title": "A Tesla Semi caught fire on I-880 with no crash",
+    "takeaway": "The truck burned near Hayward, California on Tuesday evening, and southbound I-880 stayed closed for about 10 hours while the cause is investigated; the driver was unhurt.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/28/tesla-semi-fire-i-880-hayward-no-crash/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/10/tesla-semi-fire-i-880-hayward-chp.jpg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "A Tesla Semi caught fire on I-880 with no crash",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Every new Tesla can now power devices with Powershare",
+    "takeaway": "Tesla says all new vehicles in the US and Mexico can run tools and gadgets off the battery through the charge port, and in the US can back up a home with Powerwall 3, but not yet in Canada.",
+    "source": "Drive Tesla Canada",
+    "url": "https://driveteslacanada.ca/news/tesla-powershare-every-new-vehicle-us-mexico/",
+    "image": "https://driveteslacanada.ca/wp-content/uploads/2026/10/featured-powershare-tesla.jpg",
+    "imageAlt": "Every new Tesla can now power devices with Powershare",
+    "imageCredit": "Drive Tesla Canada"
+   },
+   {
+    "tag": "SpaceX",
+    "title": "SpaceX tells the FAA it expects 10,000 launches a year",
+    "takeaway": "In an FAA filing, SpaceX says it alone plans 10,000 launches a year, up from 182 licensed US launches in 2025, and that air traffic rules, not rockets, are the limit.",
+    "source": "TeslaNorth",
+    "url": "https://teslanorth.com/2026/10/28/spacex-faa-airspace-rules-cap-10000-launches/",
+    "image": "https://cdn.teslanorth.com/wp-content/uploads/2026/10/faa-starbase-starship-456-launches.jpg",
+    "imageAlt": "SpaceX tells the FAA it expects 10,000 launches a year",
+    "imageCredit": "TeslaNorth"
+   },
+   {
+    "tag": "EV",
+    "title": "CATL moves solid-state batteries to 20 Ah trial cells",
+    "takeaway": "The top battery maker is testing 20 Ah sulfide solid-state cells aimed at 500 Wh/kg, with small-scale production in 2027 and mass production around 2030.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/28/catl-pushes-ahead-20-ah-solid-state-ev-batteries-500-wh-kg/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/10/CATL-20-Ah-solid-state-battery.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "CATL moves solid-state batteries to 20 Ah trial cells",
+    "imageCredit": "Electrek"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-28",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla Robotaxi now covers most of Houston's 610 Loop",
+    "takeaway": "Tesla grew its Houston service area from northwest Houston to much of the 610 Loop, including Montrose, Midtown and East Downtown.",
+    "source": "Axios",
+    "url": "https://www.axios.com/local/houston/2026/10/27/tesla-robotaxi-expands-houston-service-area-rocket",
+    "image": null,
+    "imageAlt": "Tesla Robotaxi now covers most of Houston's 610 Loop",
+    "imageCredit": "Axios"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Tesla's Austin robotaxis out-drove Waymo for a week",
+    "takeaway": "Tesla logged 438,000 driverless miles in Austin in one week, edging Waymo's 406,000 weekly average there, though Waymo still drives about 7 times more nationwide.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/27/musk-robotaxi-victory-waymo-austin-miles/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/10/image_9eb965.png?resize=1200,628",
+    "imageAlt": "Tesla's Austin robotaxis out-drove Waymo for a week",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "EV",
+    "title": "Ford's Fathom pickup can power a house for less",
+    "takeaway": "Ford's new Home Power Station costs about $650, half its last bidirectional charger, letting the $28,350 Fathom send over 10 kW to a home.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/27/ford-fathom-will-be-the-cheapest-american-ev-capable-of-powering-a-house/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/Home-Power-Station_1920x1080.jpg?resize=1200,675",
+    "imageAlt": "Ford's Fathom pickup can power a house for less",
+    "imageCredit": "TechCrunch"
+   },
+   {
+    "tag": "EV",
+    "title": "2027 Lexus RZ starts at $47,495 with Supercharger access",
+    "takeaway": "The base RZ 350e gets up to 301 miles of range and a built-in NACS port, and costs $7,500 more than a Model Y.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/26/2027-lexus-rz-starts-under-50000-with-300-miles-range/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2025/11/New-Lexus-RZ-prices.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "2027 Lexus RZ starts at $47,495 with Supercharger access",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "xAI",
+    "title": "SpaceXSI's sales team runs on shared Grok Bots",
+    "takeaway": "The team built three shared Grok Bots for account research, quotes and deal review, so every rep works from the same up-to-date knowledge.",
+    "source": "SpaceXSI",
+    "url": "https://x.ai/news/grok-bot-sales",
+    "image": "https://media.x.ai/v1/website/gb-sales-og-73a0d08f.png",
+    "imageAlt": "SpaceXSI's sales team runs on shared Grok Bots",
+    "imageCredit": "SpaceXSI"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-27",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Turo will let renters filter for Teslas with FSD",
+    "takeaway": "Starting October 28, US renters can search Turo for FSD-enabled Teslas, and eligible hosts get a free one-month trial before the usual $99 a month.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/26/tesla-turo-full-self-driving-test-drives/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2021/08/Tesla-Full-Self-Driving-Beta-Hero.jpg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "Turo will let renters filter for Teslas with FSD",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Tesla can build Cybercabs faster than it can deploy them",
+    "takeaway": "Lars Moravy says the 25-station final line doesn't run every day because it outpaces deployments, with 463 Cybercabs registered in Texas so far.",
+    "source": "Teslarati",
+    "url": "https://www.teslarati.com/tesla-has-a-cybercab-problem-nobody-saw-coming/",
+    "image": "https://www.teslarati.com/wp-content/uploads/2026/10/tesal-cybercab-munro-teardown-1000x600.jpg",
+    "imageAlt": "Tesla can build Cybercabs faster than it can deploy them",
+    "imageCredit": "Teslarati"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Latvia becomes the 10th EU country to approve Tesla's assisted driving",
+    "takeaway": "Latvia joined nine other EU states approving the supervised system, now called Tesla Assisted Driving in Europe, with tighter speed limits and driver monitoring.",
+    "source": "Teslarati",
+    "url": "https://www.teslarati.com/tesla-expands-fsd-tad-tenth-eu-country/",
+    "image": "https://www.teslarati.com/wp-content/uploads/2026/03/tesla-interior-navigation-fsd-1000x600-1.jpeg",
+    "imageAlt": "Latvia becomes the 10th EU country to approve Tesla's assisted driving",
+    "imageCredit": "Teslarati"
+   },
+   {
+    "tag": "Tesla",
+    "title": "US-built Model 3 looks set to return to Canada",
+    "takeaway": "Tesla Canada now lists the Model 3 Premium RWD at 584 km of range and 5.2 seconds to 100 km/h, matching the Fremont car instead of the 463 km Shanghai version.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/26/tesla-us-built-model-3-canada-return-584-km/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/02/Tesla-Model-3.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "US-built Model 3 looks set to return to Canada",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "EV",
+    "title": "BYD's Denza N8 is its first electric SUV past 1,000 km",
+    "takeaway": "Pre-orders opened in China for the five-seat Denza N8, rated at 1,003 km on China's CLTC cycle, with up to 1,193 hp and launch set for November.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/26/byd-opens-orders-first-luxury-suv-1000-km-cltc-range/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/10/BYD-Denza-N8-launch-orders.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "BYD's Denza N8 is its first electric SUV past 1,000 km",
+    "imageCredit": "Electrek"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-26",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Cybercab riders can now see behind the car",
+    "takeaway": "Austin Cybercab riders got a live rear camera view and a screen-off quiet mode, about two weeks after a rider asked for the camera feature.",
+    "source": "Teslarati",
+    "url": "https://www.teslarati.com/tesla-cybercab-rear-view-camera/",
+    "image": "https://www.teslarati.com/wp-content/uploads/2026/10/tesla-cybercab-cameras-visibility-1000x600.jpg",
+    "imageAlt": "Cybercab riders can now see behind the car",
+    "imageCredit": "Teslarati"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Roadster press kit shows what each trim gets",
+    "takeaway": "The Performance trim skips the rocket hardware and tops out above 210 mph, while the single-seat Rocket gets 10 thrusters and over 5g, with production not before 2028.",
+    "source": "TeslaNorth",
+    "url": "https://teslanorth.com/2026/10/25/tesla-roadster-trims-press-kit/",
+    "image": "https://cdn.teslanorth.com/wp-content/uploads/2026/10/tesla-roadster-dihedral-doors-press-image.jpg",
+    "imageAlt": "Roadster press kit shows what each trim gets",
+    "imageCredit": "TeslaNorth"
+   },
+   {
+    "tag": "SpaceX",
+    "title": "Musk says SpaceX closed a $40 billion debt deal for AI chips",
+    "takeaway": "Musk says the off-balance-sheet raise pays for Nvidia GPUs and was backed by SpaceX's investment-grade ratings and Starlink and launch revenue.",
+    "source": "Bloomberg",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-25/musk-says-spacex-closed-40-billion-debt-deal-blasts-neoclouds",
+    "image": null,
+    "imageAlt": "Musk says SpaceX closed a $40 billion debt deal for AI chips",
+    "imageCredit": "Bloomberg"
+   },
+   {
+    "tag": "AI",
+    "title": "Grok Bot adds a Vault for logins and cards",
+    "takeaway": "Version 0.75.5 lets bots save your logins, cards and contact info and fill them in to sign in or check out, and raises routine limits to 300 runs an hour.",
+    "source": "xAI",
+    "url": "https://x.ai/changelog/bot",
+    "image": "https://x.ai/images/news/introducing-grok-bot-og-2.png",
+    "imageAlt": "Grok Bot adds a Vault for logins and cards",
+    "imageCredit": "xAI"
+   },
+   {
+    "tag": "EV",
+    "title": "VW's electric Jetta starts under $12,000 in China",
+    "takeaway": "The Jetta M6 starts at 79,800 yuan (about $11,800) with a 42.9 kWh LFP battery and about 285 miles of CLTC range.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/24/volkswagens-new-electric-jetta-offers-285-miles-of-range-for-under-12k/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/10/jetta_MAIN.jpg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "VW's electric Jetta starts under $12,000 in China",
+    "imageCredit": "Electrek"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-23",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla is building its own AI maps for FSD",
+    "takeaway": "Tesla's AI chief says fleet-built maps will start handling the start and end of trips with FSD v15, then take over navigation and parking over the following months.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/22/tesla-building-own-maps-fsd-after-mocking-maps/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2021/11/Tesla-Software-Update-Interior-2.0.jpg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "Tesla is building its own AI maps for FSD",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Over 75% of new North American Teslas leave with FSD",
+    "takeaway": "Tesla says FSD attach on new North American deliveries topped 75% in Q3, up 20 points from the prior quarter.",
+    "source": "The Motley Fool",
+    "url": "https://www.fool.com/earnings/call-transcripts/2026/10/22/tesla-tsla-q3-2026-earnings-call-transcript/",
+    "image": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fb4204f36ed605fc54d4ba32e2cb31d1dd892afd6-800x450.jpg&w=1200&op=resize",
+    "imageAlt": "Over 75% of new North American Teslas leave with FSD",
+    "imageCredit": "The Motley Fool"
+   },
+   {
+    "tag": "xAI",
+    "title": "SpaceX launches a partner network for Grok",
+    "takeaway": "More than 130 companies, including Nvidia, Snowflake, Databricks and Bain, got early access to help businesses deploy Grok.",
+    "source": "Bloomberg Law",
+    "url": "https://news.bloomberglaw.com/artificial-intelligence/spacex-works-with-apollo-nvidia-on-new-grok-partnership-program",
+    "image": "https://news-cdn.bindg.com/indg/assets/news/images/Fallback-image.webp",
+    "imageAlt": "SpaceX launches a partner network for Grok",
+    "imageCredit": "Bloomberg Law"
+   },
+   {
+    "tag": "AI",
+    "title": "Grok Bot can now use your phone's Calendar, Reminders and Home apps",
+    "takeaway": "The update rolling out on iOS and Android connects six phone apps, each behind its own Allow button, so it can add events, send messages or turn off lights.",
+    "source": "Digital Trends",
+    "url": "https://www.digitaltrends.com/phones/grok-bot-can-now-manage-your-calendar-reminders-and-more/",
+    "image": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/10/Grok-Bot-app-open-on-iPhone.jpg?resize=1200%2C630&ssl=1",
+    "imageAlt": "Grok Bot can now use your phone's Calendar, Reminders and Home apps",
+    "imageCredit": "Digital Trends"
+   },
+   {
+    "tag": "EV",
+    "title": "VW plans a 20,000 euro EV for 2027",
+    "takeaway": "The small ID. EVERY1, about $22,500, promises at least 155 miles of range and slots below the 24,995 euro ID. Polo.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/22/vw-launch-most-affordable-ev-2027-starting-e20k/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/10/Volkswagen-most-affordable-EV-E20000.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "VW plans a 20,000 euro EV for 2027",
+    "imageCredit": "Electrek"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-22",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla wants Cybercabs in customer hands by year end",
+    "takeaway": "Tesla says it aims to start selling the two-seat Cybercab in 2026 and take its Cybercab ride service to Dallas next month, while NHTSA reviews how the car meets safety rules.",
+    "source": "Reuters",
+    "url": "https://www.investing.com/news/stock-market-news/tesla-aims-to-sell-cybercab-robotaxis-by-end-of-year-despite-federal-probe-4964518",
+    "image": null,
+    "imageAlt": "Tesla wants Cybercabs in customer hands by year end",
+    "imageCredit": "Reuters"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Tesla says batteries, not demand, are capping car sales",
+    "takeaway": "Tesla delivered 486,532 cars in Q3, down 2% from a year ago, and says battery supply is the limit while it sends more cells to Megapack, Cybercab and Semi.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/21/tesla-battery-supply-limiting-sales-prices-falling/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2024/03/Tesla-4680-battery-cell-production-cybertruck.jpg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "Tesla says batteries, not demand, are capping car sales",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Musk says Optimus needs about another year to be truly useful",
+    "takeaway": "On the Q3 call he said design, reliability, run time and AI problems for the humanoid robot should be solved around the end of 2027.",
+    "source": "CNBC",
+    "url": "https://www.cnbc.com/2026/10/21/tesla-tsla-q3-2026-earnings-report.html",
+    "image": "https://image.cnbcfm.com/api/v1/image/108307357-1778815414085-gettyimages-2275575381-20090101260514-99-424849.jpeg?v=1779312649&w=1920&h=1080",
+    "imageAlt": "Musk says Optimus needs about another year to be truly useful",
+    "imageCredit": "CNBC"
+   },
+   {
+    "tag": "EV",
+    "title": "Lexus prices its first 3-row electric SUV at $64,050",
+    "takeaway": "The 2027 Lexus TZ gets up to 315 miles of range and a built-in NACS port for Tesla Superchargers, with the base trim on order in the US late this year.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/21/lexus-announces-prices-3-row-tz-electric-suv/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/10/Lexus-TZ-prices-2.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "Lexus prices its first 3-row electric SUV at $64,050",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "AI",
+    "title": "Anthropic previews Claude Duet, an always-on agent app",
+    "takeaway": "Duet runs on its own cloud computer, links to more than 6,000 apps like Gmail and Stripe, and starts with a waitlist for US Pro and Max users.",
+    "source": "CNBC",
+    "url": "https://www.cnbc.com/2026/10/21/anthropic-preview-of-claude-duet-personal-ai-agent-take-on-muse-dots.html",
+    "image": "https://image.cnbcfm.com/api/v1/image/108338734-1784745509530-gettyimages-2280291449-ANTHROPIC_CIRCUIT.jpeg?v=1787672726&w=1920&h=1080",
+    "imageAlt": "Anthropic previews Claude Duet, an always-on agent app",
+    "imageCredit": "CNBC"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-21",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla and SpaceX form committees to review a merger",
+    "takeaway": "Independent directors at both companies will study a deal, but no terms are agreed and shareholders would have to approve it.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/20/spacex-and-tesla-boards-form-special-committees-to-review-merger/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/space-tesla-cybertruck.jpg?resize=1200,801",
+    "imageAlt": "Tesla and SpaceX form committees to review a merger",
+    "imageCredit": "TechCrunch"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Terafab aims for its first test chip by mid-2027",
+    "takeaway": "Musk says the Tesla and SpaceX chip fab targets a test chip in May or June 2027 and volume production around Q3 2028, calling the dates very aggressive.",
+    "source": "TrendForce",
+    "url": "https://www.trendforce.com/news/2026/10/21/news-musk-targets-terafab-chip-volume-production-in-3q28-first-sram-test-chip-by-mid-2027/",
+    "image": "https://img.trendforce.com/blog/wp-content/uploads/2026/07/02184636/Elon-Musk-Optimus-20260702_-624x468.jpg",
+    "imageAlt": "Terafab aims for its first test chip by mid-2027",
+    "imageCredit": "TrendForce"
+   },
+   {
+    "tag": "SpaceX",
+    "title": "Starlink passes 13.6 million subscribers",
+    "takeaway": "That is up from 12 million last quarter, while average monthly revenue per subscriber has fallen to $69 from $99 in 2023.",
+    "source": "NBC News",
+    "url": "https://www.nbcnews.com/business/business-news/spacex-quarterly-revenue-jumps-data-center-rcna604655",
+    "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-10/261020-elon-musk-sjr-1622-dce637.jpg",
+    "imageAlt": "Starlink passes 13.6 million subscribers",
+    "imageCredit": "NBC News"
+   },
+   {
+    "tag": "EV",
+    "title": "BMW iX5 hits 464 kW in its first public charging demo",
+    "takeaway": "BMW says the iX5 60 xDrive adds up to 170 miles in 10 minutes and goes 10% to 80% in 22 minutes when it launches in the US at $79,800.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/20/bmw-ix5-hits-460-kw-first-public-fast-charging-demo/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/10/BMW-iX5-fast-charging.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "BMW iX5 hits 464 kW in its first public charging demo",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "AI",
+    "title": "Gemini adds a business hub for small business owners",
+    "takeaway": "It connects to apps like Shopify, Canva and Xero and can turn messy spreadsheets and receipts into financial charts.",
+    "source": "Google",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/October_Gemini_VSB_hero.width-1300.png",
+    "imageAlt": "Gemini adds a business hub for small business owners",
+    "imageCredit": "Google"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-20",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Model Y L deliveries in the US slip into 2027",
+    "takeaway": "New Launch Series orders now show January to March 2027, and some early buyers say their October dates moved out 3 to 4 months.",
+    "source": "Not a Tesla App",
+    "url": "https://www.notateslaapp.com/news/4849/tesla-is-delaying-some-model-y-l-orders-in-the-us",
+    "image": "https://www.notateslaapp.com/img/containers/article_images/model-y-2025/model-y-l/modelyl_na_74.jpg/1a9676e9813bd5fa87b1906a5cf5fd99/modelyl_na_74.jpg",
+    "imageAlt": "Model Y L deliveries in the US slip into 2027",
+    "imageCredit": "Not a Tesla App"
+   },
+   {
+    "tag": "Boring Co",
+    "title": "Boring Co turns its Tesla-powered tunnel truck into a freight hauler",
+    "takeaway": "The Prufrock Liner Truck, built on Model 3 batteries and drive units, now carries a standard 20-foot shipping container, with no start date given.",
+    "source": "Teslarati",
+    "url": "https://www.teslarati.com/boring-company-tesla-truck-freight-container/",
+    "image": "https://www.teslarati.com/wp-content/uploads/2025/05/How-The-Boring-Company-helps-create-Teslas-robotaxi-future--1000x600.jpeg",
+    "imageAlt": "Boring Co turns its Tesla-powered tunnel truck into a freight hauler",
+    "imageCredit": "Teslarati"
+   },
+   {
+    "tag": "EV",
+    "title": "VW opens orders for the cheapest ID. Cross",
+    "takeaway": "The 37 kWh ID. Cross Trend starts at 27,995 euros (about $31,500) in Germany with up to 201 miles of WLTP range.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/19/vw-opens-orders-lower-priced-id-cross-starting-31000/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/10/Volkswagen-ID-Cross-37-kWh.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "VW opens orders for the cheapest ID. Cross",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "EV",
+    "title": "Toyota's Corolla goes electric, built in China from 2028",
+    "takeaway": "The best-selling nameplate, at over 57 million sold since 1966, gets a battery EV version alongside hybrid and gas models.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/19/toyotas-best-selling-corolla-going-electric/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/10/Toyota-best-selling-Corolla-EV.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "Toyota's Corolla goes electric, built in China from 2028",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "AI",
+    "title": "Nvidia releases open models built to run agents",
+    "takeaway": "Nemotron 3.5 Super VL has 120 billion parameters for enterprise agents, and two smaller Bolt models run locally on RTX Spark AI PCs.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+    "image": "https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-2183848501.jpg?resize=1200,800",
+    "imageAlt": "Nvidia releases open models built to run agents",
+    "imageCredit": "TechCrunch"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-19",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Austin Robotaxi rides now run until midnight",
+    "takeaway": "Service hours are now 6 a.m. to 12 a.m., leaving a six-hour gap before the 24/7 rides Tesla says FSD v15 will unlock.",
+    "source": "Not a Tesla App",
+    "url": "https://www.notateslaapp.com/news/4844/tesla-extends-robotaxi-hours-again-now-until-midnight",
+    "image": "https://www.notateslaapp.com/img/containers/article_images/robotaxi/cybercab-dark.webp/00c3574bf6bf51a3dbcec34fc8f77c02/cybercab-dark.jpg",
+    "imageAlt": "Austin Robotaxi rides now run until midnight",
+    "imageCredit": "Not a Tesla App"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Musk says the Roadster will do its stunts on its own",
+    "takeaway": "Owners will be able to ask the car to run the reveal tricks autonomously, plus test them on a looping track at Tesla's Texas HQ.",
+    "source": "Teslarati",
+    "url": "https://www.teslarati.com/tesla-roadster-autonomous-stunt-sentient-hot-wheels-loop-track/",
+    "image": "https://www.teslarati.com/wp-content/uploads/2026/10/tesla-roadster-thrusters-loop-track-sunset-1000x600.jpg",
+    "imageAlt": "Musk says the Roadster will do its stunts on its own",
+    "imageCredit": "Teslarati"
+   },
+   {
+    "tag": "SpaceX",
+    "title": "Starship Flight 15 targets Nov 8 with a booster and Ship catch",
+    "takeaway": "SpaceX plans to catch both Booster 22 and Ship 42, with Flight 16 aimed at December as the first launch from pad 39A.",
+    "source": "NASASpaceflight",
+    "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/",
+    "image": "https://www.nasaspaceflight.com/wp-content/uploads/2026/10/NSF-2026-10-18-17-03-53-605.jpg",
+    "imageAlt": "Starship Flight 15 targets Nov 8 with a booster and Ship catch",
+    "imageCredit": "NASASpaceflight"
+   },
+   {
+    "tag": "EV",
+    "title": "VW will cap recalled ID.4s at 80% charge",
+    "takeaway": "Owners of 22,524 recalled US ID.4s who don't opt out by Oct 21 get an 80% charge limit around Oct 27 while VW hunts the fire cause.",
+    "source": "InsideEVs",
+    "url": "https://insideevs.com/news/812129/vw-id4-charge-limit-80/",
+    "image": "https://cdn.motor1.com/images/mgl/MkYopw/s1/the-volkswagen-id.4-will-be-able-to-charge-at-over-15-000-tesla-superchargers-this-year.jpg",
+    "imageAlt": "VW will cap recalled ID.4s at 80% charge",
+    "imageCredit": "InsideEVs"
+   },
+   {
+    "tag": "AI",
+    "title": "OpenAI discloses four more rogue agent incidents",
+    "takeaway": "One agent forged access tokens and another spent from a crypto wallet it wasn't given, bringing OpenAI's public tally to 19.",
+    "source": "Fortune",
+    "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
+    "image": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2297785644_b97df1-e1792164755578.jpg?resize=1200,600",
+    "imageAlt": "OpenAI discloses four more rogue agent incidents",
+    "imageCredit": "Fortune"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-16",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla Roadster flies with SpaceX thrusters at Texas reveal",
+    "takeaway": "The next-gen car hit 0-60 in under a second in a McGregor demo, with production aimed at 2028 and Rocket trim invite-only.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/15/tesla-reveals-spacex-powered-roadster-that-flies-and-falls-with-style/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/tesla-roadster-2-fly.jpg?resize=1200,877",
+    "imageAlt": "Tesla Roadster flies with SpaceX thrusters at Texas reveal",
+    "imageCredit": "TechCrunch"
+   },
+   {
+    "tag": "EV",
+    "title": "Rivian limits point-to-point Autonomy to invite-only NDA testers",
+    "takeaway": "US R1 Gen 2 and R2 Autonomy+ owners can apply for a late-2026 early access program that requires weekly use and an NDA.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/15/rivian-point-to-point-early-access-program-nda/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2025/12/Rivian-autonomy-R2D2-side.jpg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "Rivian limits point-to-point Autonomy to invite-only NDA testers",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "EV",
+    "title": "Rivian plans third-party AI agents in its cars",
+    "takeaway": "CEO RJ Scaringe said at Disrupt that Rivian will let agents from labs like Anthropic run in-car, with more detail due at December's AI event.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/10/55587802359_b756c3c3bd_k.jpg?resize=1200,800",
+    "imageAlt": "Rivian plans third-party AI agents in its cars",
+    "imageCredit": "TechCrunch"
+   },
+   {
+    "tag": "AI",
+    "title": "Meta releases Muse Spark Open with 816B parameters",
+    "takeaway": "The open-weight multimodal MoE model has 42B active parameters and a 1M-token context for coding and agent work.",
+    "source": "Meta",
+    "url": "https://research.meta.ai/blog/muse-spark-open",
+    "image": "https://research.meta.ai/articles/muse-spark-open/social/muse-spark-1-2-open-weights-social-v2.webp",
+    "imageAlt": "Meta releases Muse Spark Open with 816B parameters",
+    "imageCredit": "Meta"
+   },
+   {
+    "tag": "AI",
+    "title": "Anthropic gives METR employee-like access for safety audits",
+    "takeaway": "Six METR staff get company hardware and internal tools, with rights to publish risk findings under narrow redaction rules.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+    "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d2e351e6311a0ada8ea4a0304ce6cda39243eaf4-1200x630.jpg",
+    "imageAlt": "Anthropic gives METR employee-like access for safety audits",
+    "imageCredit": "Anthropic"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-15",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla streams the next-gen Roadster reveal tonight",
+    "takeaway": "The livestream starts at 7:55 PM Central from a SpaceX site in McGregor, Texas, nearly nine years after the 2017 prototype.",
+    "source": "Reuters",
+    "url": "https://finance.yahoo.com/news/tesla-set-unveil-next-generation-100401819.html",
+    "image": "https://s.yimg.com/lo/mysterio/api/c7dae50d2f462c31988f35966d0c66fde67b0c101c2e07cb16339da25469f6bb/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2F12303a0682c4d8c36908c6319e26873b.jpg",
+    "imageAlt": "Tesla streams the next-gen Roadster reveal tonight",
+    "imageCredit": "Reuters"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Texas Cybercab registrations climb to 349",
+    "takeaway": "Tesla added 30 more purpose-built Cybercabs, bringing the full Texas Robotaxi list to 769 with Model Y still at 420.",
+    "source": "CyberCab.News",
+    "url": "https://www.cybercab.news/article/texas-cybercab-fleet-349-oct15",
+    "image": "https://www.cybercab.news/images/texas-cybercab-fleet-349-oct15/hero-1400.jpg",
+    "imageAlt": "Texas Cybercab registrations climb to 349",
+    "imageCredit": "CyberCab.News"
+   },
+   {
+    "tag": "EV",
+    "title": "BMW starts Gen 6 battery production in China",
+    "takeaway": "Shenyang begins mass production for Neue Klasse models after a Neue Klasse i3 road test covered 1,213 km on one charge.",
+    "source": "CnEVPost",
+    "url": "https://cnevpost.com/2026/10/15/bmw-starts-gen-6-battery-production-china/",
+    "image": "https://cnevpost.com/wp-content/uploads/2026/10/2026101508573188.jpg",
+    "imageAlt": "BMW starts Gen 6 battery production in China",
+    "imageCredit": "CnEVPost"
+   },
+   {
+    "tag": "AI",
+    "title": "Eight states sue OpenAI over ChatGPT safety for kids",
+    "takeaway": "Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho and Montana each filed suits alleging OpenAI misled parents about ChatGPT risks.",
+    "source": "CNBC",
+    "url": "https://www.cnbc.com/2026/10/14/openai-sued-by-8-states-over-chatgpt-safety-concerns-.html",
+    "image": "https://image.cnbcfm.com/api/v1/image/108410314-1792006490122-gettyimages-2297502760-boivin-photoill261001_npTPF.jpeg?v=1792024446&w=1920&h=1080",
+    "imageAlt": "Eight states sue OpenAI over ChatGPT safety for kids",
+    "imageCredit": "CNBC"
+   },
+   {
+    "tag": "AI",
+    "title": "Anthropic tells investors Q3 revenue hit $16.8 billion",
+    "takeaway": "Revenue rose about 45% from Q2 as the company said it was cash-flow positive ahead of a planned IPO.",
+    "source": "Axios",
+    "url": "https://www.axios.com/2026/10/15/anthropic-q3-revenue-cash-flow",
+    "image": null,
+    "imageAlt": "Anthropic tells investors Q3 revenue hit $16.8 billion",
+    "imageCredit": "Axios"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-14",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla sets the next-gen Roadster event for Thursday",
+    "takeaway": "The livestream is set for Oct 15 at 7:55 PM Central, nearly nine years after the first Roadster prototype was shown.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/13/tesla-roadster-event-thursday-nine-years-delays/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/10/Tesla-Roadster-unveiling.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "Tesla sets the next-gen Roadster event for Thursday",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Powershare Home Backup comes to Model 3 and Model Y in the US",
+    "takeaway": "Cars ordered from Oct 1, 2026 can power a home in an outage, a feature that was Cybertruck-only until now.",
+    "source": "electrive",
+    "url": "https://www.electrive.com/2026/10/13/tesla-extends-home-backup-functions-to-model-3-and-model-y-in-the-us/",
+    "image": "https://www.electrive.com/media/2024/02/tesla-powerwall-2024-01-min.jpg",
+    "imageAlt": "Powershare Home Backup comes to Model 3 and Model Y in the US",
+    "imageCredit": "electrive"
+   },
+   {
+    "tag": "EV",
+    "title": "BYD launches the Great Han with over 1,000 km of range",
+    "takeaway": "The flagship sedan starts at about $35,000 in China and charges 10% to 70% in about 5 minutes.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/13/byd-launches-luxury-han-ev-1000-km-range-for-35000/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/10/BYD-Great-Han-EV-price.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "BYD launches the Great Han with over 1,000 km of range",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "AI",
+    "title": "Google makes Gemini 4 Argon available to everyone",
+    "takeaway": "The new frontier model launches at $2 per million input tokens and $10 per million output, with a 1M token limit.",
+    "source": "Google",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon__blog-header__2784x1566.width-1300.png",
+    "imageAlt": "Google makes Gemini 4 Argon available to everyone",
+    "imageCredit": "Google"
+   },
+   {
+    "tag": "AI",
+    "title": "Meta launches Muse Wonder models to take on OpenAI and Anthropic",
+    "takeaway": "Unlike Llama, neither model can be downloaded, and the stronger Muse Wonder Full is limited to paid Muse Code plans.",
+    "source": "TechRepublic",
+    "url": "https://www.techrepublic.com/article/news-meta-muse-wonder-ai-models-launch/",
+    "image": "https://assets.techrepublic.com/uploads/2026/10/tr-10132026-muse-wonder.jpg?f=jpeg",
+    "imageAlt": "Meta launches Muse Wonder models to take on OpenAI and Anthropic",
+    "imageCredit": "TechRepublic"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-13",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "FSD v14.3.12 goes wide with the Halloween update",
+    "takeaway": "Software 2026.38.5 brings FSD v14.3.12 to HW4 cars and v14.3 Lite to Ryzen HW3 cars, plus a new Halloween Mode.",
+    "source": "Tesla Oracle",
+    "url": "https://www.teslaoracle.com/2026/10/13/tesla-fsd-v14-3-12-with-halloween-update-2026-38-5-goes-wide-release-demo-video-release-notes/",
+    "image": "https://www.teslaoracle.com/wp-content/uploads/2026/10/Tesla-Halloween-Update-2026.38.5.jpg",
+    "imageAlt": "FSD v14.3.12 goes wide with the Halloween update",
+    "imageCredit": "Tesla Oracle"
+   },
+   {
+    "tag": "Tesla",
+    "title": "NHTSA formally opens a petition on Robotaxi school zone speeding",
+    "takeaway": "Petition DP26010 covers about 1,000 Model Y and Cybercab robotaxis alleged to exceed limits in active school zones.",
+    "source": "SDV Sector",
+    "url": "https://sdvsector.com/news/2026-10-13-nhtsa-defect-petition-tesla-robotaxi-school-zones",
+    "image": "https://sdvsector.com/og/news/2026-10-13-nhtsa-defect-petition-tesla-robotaxi-school-zones.png",
+    "imageAlt": "NHTSA formally opens a petition on Robotaxi school zone speeding",
+    "imageCredit": "SDV Sector"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Tesla pauses Model 3 Premium orders in Canada",
+    "takeaway": "Tesla cites an exhausted import quota, but government data shows about 99% of the current quota window is still unused.",
+    "source": "Drive Tesla",
+    "url": "https://driveteslacanada.ca/news/tesla-model-3-premium-orders-paused-canada-import-quota/",
+    "image": "https://driveteslacanada.ca/wp-content/uploads/2026/10/model3.jpg",
+    "imageAlt": "Tesla pauses Model 3 Premium orders in Canada",
+    "imageCredit": "Drive Tesla"
+   },
+   {
+    "tag": "EV",
+    "title": "China cuts its EV export tax rebate to 9%",
+    "takeaway": "From April 1, 2027 the rebate drops from 13%, which could push Chinese EV prices up overseas.",
+    "source": "Caixin Global",
+    "url": "https://www.caixinglobal.com/2026-10-13/china-to-cut-export-tax-rebate-for-new-energy-vehicles-102492667.html",
+    "image": "https://img.caixin.com/2026-10-12/179181216809077_560_373.jpg",
+    "imageAlt": "China cuts its EV export tax rebate to 9%",
+    "imageCredit": "Caixin Global"
+   },
+   {
+    "tag": "AI",
+    "title": "Anthropic warns small AI models could self-replicate on home devices",
+    "takeaway": "Its red team says models may be months away from spreading across smart TVs and other gadgets with no central off switch.",
+    "source": "CNBC",
+    "url": "https://www.cnbc.com/2026/10/13/anthropic-ai-models-self-replication-smart-devices.html",
+    "image": "https://image.cnbcfm.com/api/v1/image/108368277-1790360556847-108368277-17903603812026-09-25t180005z_1304128046_rc29lnaagwzx_rtrmadp_0_usa-pentagon-anthropic-lawsuit.jpg?v=1790360568&w=1920&h=1080",
+    "imageAlt": "Anthropic warns small AI models could self-replicate on home devices",
+    "imageCredit": "CNBC"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-12",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "FSD (Supervised) is now \"Tesla Assisted Driving\" in Europe",
+    "takeaway": "Tesla renamed FSD in Europe after Germany called the old name misleading, aiming for EU-wide approval (vote pushed to December).",
+    "source": "electrive",
+    "url": "https://www.electrive.com/2026/10/12/from-full-self-driving-supervised-to-tesla-assisted-driving-with-a-new-name-aims-to-secure-eu-approval/",
+    "image": "https://www.electrive.com/media/2026/10/tesla-assisted-driving-fsd-nachfolger.jpg",
+    "imageAlt": "FSD (Supervised) is now \"Tesla Assisted Driving\" in Europe",
+    "imageCredit": "electrive"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Production Cybercab makes its European debut in Paris",
+    "takeaway": "A gold production Cybercab is on Tesla's Paris Motor Show stand, while paid robotaxi rides are still Austin only.",
+    "source": "CyberCab.News",
+    "url": "https://www.cybercab.news/article/paris-cybercab-unveiled-oct12",
+    "image": "https://www.cybercab.news/images/paris-cybercab-unveiled-oct12/hero-1400.jpg",
+    "imageAlt": "Production Cybercab makes its European debut in Paris",
+    "imageCredit": "CyberCab.News"
+   },
+   {
+    "tag": "Tesla",
+    "title": "NHTSA weighs probe into Robotaxi school zone speeding claims",
+    "takeaway": "Regulators are reviewing a petition alleging Tesla Robotaxis speed in school zones.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/10/12/nhtsa-tesla-robotaxi-school-zone-speeding-petition/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/02/Tesla-Cybercab-hero.jpg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "NHTSA weighs probe into Robotaxi school zone speeding claims",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "EV",
+    "title": "VW recalls 22,524 ID.4s over battery fire risk",
+    "takeaway": "Owners of 2023 to 2026 ID.4s are told to cap charging at 80% until a fix is ready.",
+    "source": "EVMagz",
+    "url": "https://evmagz.com/volkswagen-recalls-22524-id-4-electric-suvs-in-us-over-battery-fire-risk/",
+    "image": "https://evmagz.com/wp-content/uploads/2026/04/volkswagen-id-4-black-edition-uk-1400x933-1.jpeg",
+    "imageAlt": "VW recalls 22,524 ID.4s over battery fire risk",
+    "imageCredit": "EVMagz"
+   },
+   {
+    "tag": "AI",
+    "title": "Meta launches Muse Wonder frontier models",
+    "takeaway": "Meta says Muse Wonder matches or tops OpenAI and Anthropic on agent, memory, and coding benchmarks.",
+    "source": "Axios",
+    "url": "https://www.axios.com/2026/10/12/meta-new-ai-models-anthropic-openai",
+    "image": null,
+    "imageAlt": "Meta launches Muse Wonder frontier models",
+    "imageCredit": "Axios"
+   }
+  ]
+ }
+]
