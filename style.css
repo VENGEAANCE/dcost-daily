@@ -103,3 +103,13 @@ footer{border-top:1px solid var(--bd);padding:48px 20px 0;margin-top:0}
 .shb{margin:0 0 8px;padding:16px 20px;border-radius:20px;background:var(--p2);border:1px solid var(--ac)}.shb-h{font-size:17px;line-height:24px;font-weight:500;margin:6px 0}
 .refi{margin:6px 4px 0}
 @media(min-width:700px){.res{padding:28px}.res-h{font-size:30px;line-height:36px}}
+/* 2026-11-03: calculator newsletter, directly under the result. Same .nl embed as the home page.
+   The shared crop (--bhpad: 80px) clips this form's placeholder, so the calculator box shows the iframe flush and only as tall as the email row. A beehiiv challenge (.chal) is left unclipped. */
+.nlbox{margin-top:16px;background:var(--p2);border-radius:28px;padding:24px 20px;border:1px solid var(--bdh)}
+.nlbox h2{margin:8px 0 16px;max-width:640px}
+.nlbox h2 span{font-size:15px;line-height:22px;font-weight:400;margin-top:4px}
+.nlbox .nl.on .bh{--bhpad:0px;max-width:360px;height:44px;overflow:hidden;border-radius:14px;background:transparent}
+.nlbox .nl.on iframe{height:44px !important}
+.nlbox .nl.on .bh.chal{height:auto;max-width:400px}
+.nlbox .nl.on .bh.chal iframe{height:auto !important;width:100%;margin:0}
+@media(min-width:700px){.nlbox{padding:28px}}
