@@ -8,9 +8,27 @@ addEventListener("message",e=>{if(e.origin!=="https://subscribe-forms.beehiiv.co
   if(t==="beehiiv:child-loaded")f.contentWindow.postMessage({type:"beehiiv:parent-loaded",payload:{handlesRedirect:false}},"*");
   else if((t==="beehiiv:styles"||t==="beehiiv:challenge")&&p.height){const h=parseInt(p.height,10);if(h>0)f.style.height=h+"px";f.parentNode.classList.toggle("chal",t==="beehiiv:challenge")}
   else if(t==="beehiiv:challenge-resolved")f.parentNode.classList.remove("chal")})})}
-const d=document.querySelector(".disc"),m=document.querySelector(".menu");if(d)d.onclick=()=>m.classList.toggle("open")})();
+const d=document.querySelector(".disc"),m=document.querySelector(".menu");
+if(d&&m){
+ m.id="site-menu";m.setAttribute("aria-label","Site navigation");
+ d.setAttribute("aria-controls",m.id);d.setAttribute("aria-expanded","false");
+ const toggle=open=>{m.classList.toggle("open",open);d.setAttribute("aria-expanded",String(open));d.setAttribute("aria-label",open?"Close menu":"Open menu")};
+ toggle(false);d.onclick=()=>toggle(!m.classList.contains("open"));
+ m.addEventListener("click",e=>{if(e.target.closest("a"))toggle(false)});
+ document.addEventListener("click",e=>{if(!m.contains(e.target)&&!d.contains(e.target))toggle(false)});
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&m.classList.contains("open")){toggle(false);d.focus()}});
+ document.addEventListener("focusin",e=>{if(!m.contains(e.target)&&!d.contains(e.target))toggle(false)});
+ matchMedia("(min-width:1100px)").addEventListener("change",e=>{if(e.matches)toggle(false)});
+}
+const current=location.pathname.replace(/\/$/,"")||"/";
+document.querySelectorAll(".menu a,.side a").forEach(a=>{if(!a.hash&&(a.pathname.replace(/\/$/,"")||"/")===current)a.setAttribute("aria-current","page")});
+const main=document.querySelector(".main");if(main){main.id="main-content";main.setAttribute("role","main");main.tabIndex=-1;const skip=document.createElement("a");skip.className="skip";skip.href="#main-content";skip.textContent="Skip to content";document.body.prepend(skip)}})();
 // Footer disclosure: static HTML carries the Associates line; swap to the fallback if AMAZON_TAG is ever emptied.
 (function(){const tagged=!!((CONFIG.AMAZON_TAG||"").trim());if(tagged)return;addEventListener("DOMContentLoaded",()=>{const dt=typeof CHARGER_PRICE_DATE!=="undefined"?CHARGER_PRICE_DATE:"Oct 19, 2026";
  document.querySelectorAll(".amz-f").forEach(p=>p.textContent="Some links may become affiliate links. Prices as of "+dt+".")})})();
 // Full Charge: savings are mint only when the EV actually saves money (calculator card 04).
 (function(){const sv=document.getElementById("sv");if(!sv||!("MutationObserver" in window))return;const t=()=>sv.classList.toggle("neg",sv.textContent.trim().startsWith("-"));new MutationObserver(t).observe(sv,{childList:true,characterData:true,subtree:true});t()})();
+
+// Associate the existing floating labels with their controls on every tool page.
+document.querySelectorAll(".fld").forEach((field,i)=>{const control=field.querySelector("input,select"),label=field.querySelector("label");if(control&&label){if(!control.id)control.id="field-"+i;label.htmlFor=control.id}});
+document.querySelectorAll(".chip").forEach(chip=>{chip.setAttribute("aria-pressed",String(chip.classList.contains("on")));chip.addEventListener("click",()=>{document.querySelectorAll(".chip").forEach(other=>other.setAttribute("aria-pressed",String(other===chip)))})});

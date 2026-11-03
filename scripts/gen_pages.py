@@ -6,14 +6,14 @@ Voice: plain, number-first, every number with its source and date. No em-dashes.
 import json, os, re, html, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://dcostdaily.com"
-V = "20261021fc"
+V = "20261103fc"
 R = json.load(open(os.path.join(ROOT, "data", "rates.json")))
 S = R["states"]
 MONTH, PRIOR = R["elec_month"], R["elec_prior_month"]
-GW = datetime.date.fromisoformat(R["gas_week"]); GWEEK = GW.strftime("%b %-d, %Y")
+GW = datetime.date.fromisoformat(R["gas_week"]); GWEEK = f"{GW:%b} {GW.day}, {GW.year}"
 US_C, US_G = R["us_cents"], R["us_gas"]
 ESRC, GSRC = R["elec_source"], R["gas_source"]
-PRICE_DATE = re.search(r'CHARGER_PRICE_DATE="([^"]+)"', open(os.path.join(ROOT, "chargers.js")).read()).group(1)
+PRICE_DATE = re.search(r'CHARGER_PRICE_DATE="([^"]+)"', open(os.path.join(ROOT, "chargers.js"), encoding="utf-8").read()).group(1)
 MI = 1000  # miles a month, same default as the calculator
 # EPA combined kWh/100 mi (fueleconomy.gov web services, 2026 model year). hub=True gets its own page.
 TRIMS = [
@@ -102,7 +102,7 @@ import sys as _s; _s.path.insert(0, os.path.join(ROOT, "scripts")); from vehicle
 def write(path, f, doc):
     assert "—" not in doc and "–" not in doc, f"dash in {f}"
     os.makedirs(os.path.dirname(os.path.join(ROOT, f)), exist_ok=True)
-    open(os.path.join(ROOT, f), "w").write(doc); pages.append((path, f))
+    open(os.path.join(ROOT, f), "w", encoding="utf-8").write(doc); pages.append((path, f))
 
 # ---------- state pages ----------
 hy = GAS[0]; suv = GAS[3]
@@ -289,7 +289,7 @@ guide("electricity-price-change-by-state", f"Electricity prices rose in {len(up)
 <p class="txt">These are July numbers, peak air conditioning season, and summer prices run higher than the yearly average in most states. Compare July to July, not July to your January bill.</p>''')
 
 # EV vs gas matchups, city pages, hub and the calculator vehicle list (added 2026-10-20)
-exec(open(os.path.join(ROOT, "scripts", "gen_compare.py")).read())
+exec(open(os.path.join(ROOT, "scripts", "gen_compare.py"), encoding="utf-8").read())
 
 # URL list
 open(os.path.join(ROOT, "data", "pages.txt"), "w").write("\n".join(BASE + p for p, _ in pages) + "\n")

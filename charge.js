@@ -11,21 +11,22 @@ const save=(date,read)=>{try{localStorage.setItem(KEY,JSON.stringify({date,read}
 const pad=i=>String(i+1).padStart(2,"0");
 const nice=d=>new Date(d+"T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});
 window.onToday=function(day){
- const S=day.stories,N=S.length,read=new Set(load(day.date).filter(i=>i<N));
+ const S=day.stories,N=S.length,read=new Set(load(day.date).filter(i=>Number.isInteger(i)&&i>=0&&i<N));
  const cards=[...document.querySelectorAll("#list .card")];cards.forEach((c,i)=>c.id="s"+(i+1));
  $("dl").textContent=nice(day.date);
  const words=S.reduce((a,s)=>a+((s.title||"")+" "+(s.takeaway||"")).split(/\s+/).filter(Boolean).length,0);
  const secs=Math.max(10,Math.round(words/230*60/5)*5);$("rt").textContent=N+" stories, about "+secs+" seconds.";
  $("cells").style.setProperty("--n",N);
- const draw=()=>{const n=read.size,next=[...Array(N).keys()].find(i=>!read.has(i));
-  $("cells").innerHTML=S.map((s,i)=>`<button type="button" class="cell${read.has(i)?" on":""}${i===next&&n?" nx":""}" style="--c:${tagc(s.tag)}" data-i="${i}" aria-label="Story ${pad(i)}, ${esc(s.tag)}${read.has(i)?", read":""}. Jump to it."><span>${esc(s.tag)}</span></button>`).join("");
+ $("q").dataset.state="ready";
+ const draw=()=>{const focused=document.activeElement,focusIndex=focused&&focused.closest("#cells")?focused.dataset.i:null;const n=read.size,next=[...Array(N).keys()].find(i=>!read.has(i));
+  $("cells").innerHTML=S.map((s,i)=>`<button type="button" class="cell${read.has(i)?" on":""}${i===next&&n?" nx":""}" style="--c:${tagc(s.tag)}" data-i="${i}" aria-pressed="${read.has(i)}" aria-label="Story ${pad(i)}, ${esc(s.tag)}${read.has(i)?", read":""}. Jump to it."><span>${esc(s.tag)}</span></button>`).join("");
   $("q").innerHTML=S.map((s,i)=>`<li class="${read.has(i)?"done":i===next?"next":""}" style="--c:${tagc(s.tag)}"><a href="#s${i+1}"><i>${read.has(i)?"\u2713":pad(i)}</i><span>${esc(s.title)}</span></a></li>`).join("");
-  const pct=Math.round(n/N*100);$("pct").innerHTML=pct+"<small>%</small>";$("pack").classList.toggle("full",n===N);
+  const pct=N?Math.round(n/N*100):0;$("pct").innerHTML=pct+"<small>%</small>";$("pack").classList.toggle("full",n===N);
   $("left").textContent=n===N?"All caught up":(N-n)+(N-n===1?" story":" stories");
   const go=$("go");if(n===0){go.textContent="Start charging";go.href="#s1"}else if(n<N){go.textContent="Keep charging";go.href="#s"+(next+1)}else{go.textContent="Read the archive";go.href="/archive"}
   const r=$("resume");if(n>0&&n<N){r.hidden=false;r.innerHTML="Closed the tab? We kept your place. <b>Next up: story "+pad(next)+".</b>"}else if(n===N){r.hidden=false;r.innerHTML="<b>Charged.</b> Same time tomorrow."}else r.hidden=true;
   cards.forEach((c,i)=>c.classList.toggle("read",read.has(i)));
-  document.querySelectorAll("#cells .cell").forEach(c=>c.onclick=()=>{const t=$("s"+(+c.dataset.i+1));if(t)t.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"center"})})};
+  document.querySelectorAll("#cells .cell").forEach(c=>c.onclick=()=>{const t=$("s"+(+c.dataset.i+1));if(t)t.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"center"})});if(focusIndex!==null){const cell=$("cells").querySelector(`[data-i="${focusIndex}"]`);if(cell)cell.focus({preventScroll:true})}};
  const mark=i=>{if(read.has(i))return;read.add(i);save(day.date,[...read]);draw()};
  draw();
  cards.forEach((c,i)=>{const a=c.querySelector("a.src");if(a)a.addEventListener("click",()=>mark(i))});
@@ -47,6 +48,6 @@ addEventListener("unhandledrejection",()=>{const q=$("q");if(q&&q.dataset.state=
   $("cx-g").textContent=c2(gas);$("cx-e").textContent=c2(ev);
   $("cx-gn").textContent="Gas \u00b7 "+g[0].replace(/^2026 /,"");$("cx-en").textContent="EV \u00b7 "+e[0].replace(/^2026 /,"");
   const w=gas>0?Math.min(100,ev/gas*100):100;$("cx-ei").style.width=w.toFixed(1)+"%";$("cx-gap").style.left=w.toFixed(1)+"%";
-  $("cx-s").textContent=s>=0?f(s):"-"+f(-s);$("cx-y").textContent=s>=0?"about "+f(s*12)+" a year":"gas wins at these prices";
-  $("cx-f").innerHTML=`${mi.toLocaleString()} mi \u00f7 ${g[1]} MPG \u00d7 $${gal.toFixed(3)}/gal = ${c2(gas)}. ${mi.toLocaleString()} mi \u00d7 ${e[1]} kWh/100 mi \u00d7 $${kwh.toFixed(4)}/kWh = ${c2(ev)}. EPA ratings from <a href="https://www.fueleconomy.gov">fueleconomy.gov</a>. EIA prices: US average regular gas, week of ${wk}; US average home electricity, ${R.elec_month}. Same defaults and formula as the calculator.`}).catch(()=>{})})();
+  $("cx-s").textContent=s>=0?f(s):"-"+f(-s);$("cx").classList.toggle("negative",s<0);$("cx-y").textContent=s>=0?"about "+f(s*12)+" a year":"gas wins at these prices";
+  $("cx-f").innerHTML=`${mi.toLocaleString()} mi \u00f7 ${g[1]} MPG \u00d7 $${gal.toFixed(3)}/gal = ${c2(gas)}. ${mi.toLocaleString()} mi \u00d7 ${e[1]} kWh/100 mi \u00d7 $${kwh.toFixed(4)}/kWh = ${c2(ev)}. EPA ratings from <a href="https://www.fueleconomy.gov">fueleconomy.gov</a>. EIA prices: US average regular gas, week of ${wk}; US average home electricity, ${R.elec_month}. Same defaults and formula as the calculator.`}).catch(()=>{$("cx-g").textContent="Unavailable";$("cx-e").textContent="Unavailable";$("cx-s").textContent="";$("cx-y").textContent="Enter your rates in the calculator";$("cx-f").textContent="Current prices could not be loaded. Open the calculator to enter your own electricity and gas rates."})})();
 })();
