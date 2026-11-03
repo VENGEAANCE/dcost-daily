@@ -12,7 +12,7 @@ const d=document.querySelector(".disc"),m=document.querySelector(".menu");
 if(d&&m){
  m.id="site-menu";m.setAttribute("aria-label","Site navigation");
  d.setAttribute("aria-controls",m.id);d.setAttribute("aria-expanded","false");
- const toggle=open=>{m.classList.toggle("open",open);d.setAttribute("aria-expanded",String(open));d.setAttribute("aria-label",open?"Close menu":"Open menu")};
+ const toggle=open=>{m.classList.toggle("open",open);m.inert=!open;d.setAttribute("aria-expanded",String(open));d.setAttribute("aria-label",open?"Close menu":"Open menu")};
  toggle(false);d.onclick=()=>toggle(!m.classList.contains("open"));
  m.addEventListener("click",e=>{if(e.target.closest("a"))toggle(false)});
  document.addEventListener("click",e=>{if(!m.contains(e.target)&&!d.contains(e.target))toggle(false)});
@@ -32,3 +32,84 @@ const main=document.querySelector(".main");if(main){main.id="main-content";main.
 // Associate the existing floating labels with their controls on every tool page.
 document.querySelectorAll(".fld").forEach((field,i)=>{const control=field.querySelector("input,select"),label=field.querySelector("label");if(control&&label){if(!control.id)control.id="field-"+i;label.htmlFor=control.id}});
 document.querySelectorAll(".chip").forEach(chip=>{chip.setAttribute("aria-pressed",String(chip.classList.contains("on")));chip.addEventListener("click",()=>{document.querySelectorAll(".chip").forEach(other=>other.setAttribute("aria-pressed",String(other===chip)))})});
+
+// Stageshow motion principles applied to real controls: input, response, rest.
+// No synthetic values or loops; the underlying DOM always holds the real result.
+(() => {
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const activeAnimations = new Map();
+
+  const respond = (element, frames, options = {}) => {
+    if (!element || reducedMotion.matches || !element.animate) return;
+    activeAnimations.get(element)?.cancel();
+    const animation = element.animate(frames, {
+      duration: 220,
+      fill: 'backwards',
+      easing: 'cubic-bezier(0.25, 0.8, 0.25, 1)',
+      ...options,
+    });
+    activeAnimations.set(element, animation);
+    animation.onfinish = () => {
+      if (activeAnimations.get(element) === animation) {
+        activeAnimations.delete(element);
+      }
+    };
+  };
+
+  // Change only the updated value; retain the result's text and geometry.
+  for (const id of ['sv', 'pct']) {
+    const element = document.getElementById(id);
+    if (!element) continue;
+    let previous = element.textContent;
+    new MutationObserver(() => {
+      const next = element.textContent;
+      if (previous && next !== previous) {
+        respond(element, [{opacity: 0.65}, {opacity: 1}]);
+      }
+      previous = next;
+    }).observe(element, {childList: true, characterData: true, subtree: true});
+  }
+
+  // Data can load below the fold. Reveal the comparison once, when visible.
+  const comparison = document.getElementById('cx');
+  let ready = false;
+  let visible = !('IntersectionObserver' in window);
+  let played = false;
+  let observer;
+  const revealComparison = () => {
+    if (!ready || !visible || played) return;
+    played = true;
+    observer?.disconnect();
+    comparison.querySelectorAll('.trk > i').forEach((bar, index) => {
+      respond(bar, [{transform: 'scaleX(0)'}, {transform: 'scaleX(1)'}], {
+        duration: 650,
+        delay: index * 70,
+      });
+    });
+    respond(document.getElementById('cx-s'),
+      [{opacity: 0.65}, {opacity: 1}], {duration: 300, delay: 140});
+  };
+  if (comparison) {
+    document.addEventListener('fullcharge:rates', () => {
+      ready = true;
+      revealComparison();
+    }, {once: true});
+    if ('IntersectionObserver' in window) {
+      observer = new IntersectionObserver((entries) => {
+        visible = entries[0].isIntersecting && entries[0].intersectionRatio >= 0.3;
+        revealComparison();
+      }, {threshold: 0.3});
+      observer.observe(comparison);
+    }
+  }
+
+  // Preference changes take effect immediately, including during a transition.
+  reducedMotion.addEventListener('change', (event) => {
+    if (!event.matches) return;
+    activeAnimations.forEach((animation) => animation.cancel());
+    activeAnimations.clear();
+    document.querySelectorAll('.cell.charging').forEach((cell) => {
+      cell.classList.remove('charging');
+    });
+  });
+})();

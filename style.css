@@ -262,3 +262,23 @@ button:disabled{opacity:.5;cursor:default}
 @media(min-width:1100px){.main{max-width:1376px}.fc-hero h1{font-size:70px;line-height:.98}.side{border-right:1px solid var(--bd)}.cx{gap:32px}.save b{font-size:64px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
 h1,h2,.chg-n,.res-h{overflow-wrap:anywhere}
+
+/* Stageshow: purposeful feedback on live interactions, then a still result. */
+.menu{display:block;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-6px);transition:opacity 160ms ease,transform 200ms cubic-bezier(.25,.8,.25,1),visibility 0s linear 200ms}
+.menu.open{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0);transition-delay:0s}
+.disc[aria-expanded="true"]{background:var(--bdh)}
+.pill,.chip,.disc{transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease,transform 120ms cubic-bezier(.25,.8,.25,1)}
+.pill:active,.chip:active,.disc:active{transform:translateY(1px)}
+.cell span{z-index:1}.cell.charging{background:var(--p3)}
+.cell.charging:before{content:"";position:absolute;inset:0;background:var(--c);transform-origin:left;animation:fc-charge 450ms cubic-bezier(.45,0,.1,1) both}
+.cell.charging span{animation:fc-charge-label 450ms ease both}
+.trk>i{transform-origin:left}
+.chg,.tl li{transition:opacity 200ms ease,border-color 160ms ease}
+@keyframes fc-charge{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes fc-charge-label{0%,25%{color:var(--t1)}100%{color:#000}}
+@media(hover:hover) and (pointer:fine){.pill:hover,.chip:hover,.disc:hover{transform:translateY(-1px)}.pill:active,.chip:active,.disc:active{transform:translateY(1px)}}
+@media(prefers-reduced-motion:reduce){
+ .cell.charging:before,.cell.charging span{animation:none}
+ .menu,.menu.open,.pill,.chip,.disc{transform:none}
+ .cell.charging{background:var(--c)}
+}

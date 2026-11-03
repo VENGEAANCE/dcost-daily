@@ -6,7 +6,7 @@ Voice: plain, number-first, every number with its source and date. No em-dashes.
 import json, os, re, html, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://dcostdaily.com"
-V = "20261103fc"
+V = "20261103motion"
 R = json.load(open(os.path.join(ROOT, "data", "rates.json")))
 S = R["states"]
 MONTH, PRIOR = R["elec_month"], R["elec_prior_month"]
