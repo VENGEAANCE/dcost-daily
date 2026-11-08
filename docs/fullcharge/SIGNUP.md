@@ -12,3 +12,11 @@ Validation: real Beehiiv form at 1280 and 390 widths, email field fits the frame
 
 Screenshots: [1280](newsletter-1280.png), [390](newsletter-390.png), [blocked embed at 390](newsletter-blocked-390.png).
 The newsletter hash target also follows asynchronous digest layout: a resize observer keeps the explicitly requested signup section in place as lazy thumbnails resolve. Any user wheel, touch, pointer, keyboard or hash navigation disconnects it immediately. A delayed-digest regression check passes at both widths and verifies that manual navigation is not pulled back to signup by a later layout change.
+
+## Calculator signup integration, November 8, 2026
+
+Reconciled the Full Charge branch with main's calculator newsletter addition. The calculator uses the same Beehiiv v3 loader and hosted fallback as the home page, replacing disabled placeholder controls. Vendor-managed height replaces legacy 44px iframe clipping. Existing calculator behavior, JSON and affiliate configuration are retained.
+
+Confirmed: blocked-provider fallback is visible, no disabled signup controls, no horizontal overflow or runtime errors at 1280 and 390 widths. All 6,693 internal targets and sitemap routes resolve. No subscriber was submitted and no production deployment was made.
+
+Screenshots: [1280](calculator-signup-1280.png), [390](calculator-signup-390.png).

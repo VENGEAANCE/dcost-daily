@@ -288,3 +288,9 @@ h1,h2,.chg-n,.res-h{overflow-wrap:anywhere}
 @media(max-width:699px){.nl{padding:20px}.nl-direct{padding-left:12px;padding-right:12px}}
 
 .nl-prompt{margin:0 0 16px;color:var(--t2);font-size:16px}.nl-embed:empty{display:none}
+
+/* Calculator signup uses the shared v3 embed and vendor-managed height. */
+.nlbox{margin-top:16px;background:var(--p2);border-radius:28px;padding:24px 20px;border:1px solid var(--bdh)}
+.nlbox h2{margin:8px 0 16px;max-width:640px}
+.nlbox h2 span{font-size:15px;line-height:22px;font-weight:400;margin-top:4px}
+@media(min-width:700px){.nlbox{padding:28px}}
