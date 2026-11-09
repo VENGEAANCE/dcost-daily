@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
-# Deploy dcostdaily.com: stage everything except SETUP.md, scripts/, .wrangler/, then wrangler pages deploy.
+# Canonical publisher. Credentials come from the environment or Wrangler login.
 set -euo pipefail
-SRC=/workspace/dcost-daily; STAGE=/workspace/dcost-daily-stage
-rm -rf "$STAGE"; mkdir -p "$STAGE"
-cp -a "$SRC"/. "$STAGE"/ && rm -rf "$STAGE/SETUP.md" "$STAGE/scripts" "$STAGE/.wrangler" && find "$STAGE" -maxdepth 1 -name "*.md" -delete  # private notes (e.g. affiliate answers) never ship
-export PATH=/workspace/tools/node22/bin:/workspace/tools/node_modules/.bin:$PATH
-export WRANGLER_CACHE_DIR=/workspace/.wrangler-cache WRANGLER_SEND_METRICS=false
-export CLOUDFLARE_API_TOKEN="$(cat /home/box/.secrets/cloudflare_token)"
-cd "$STAGE" && wrangler pages deploy "$STAGE" --project-name dcost-daily --branch main --commit-dirty=true
+ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+PYTHON="${PYTHON:-python3}"
+STAGE="$(mktemp -d "${TMPDIR:-/tmp}/dcost-release.XXXXXXXX")"
+trap 'rm -rf -- "$STAGE"' EXIT
+"$PYTHON" "$ROOT/scripts/prepare_release.py" --output "$STAGE" "$@"
+SHA="$(git -C "$ROOT" rev-parse HEAD)"
+export WRANGLER_SEND_METRICS=false
+wrangler pages deploy "$STAGE" --project-name dcost-daily --branch main \
+  --commit-hash "$SHA" --commit-message "Synchronized release $SHA; see /release.json" --commit-dirty=false
