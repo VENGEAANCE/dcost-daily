@@ -32,7 +32,7 @@ h2{font-size:26px;line-height:30px;font-weight:500;margin:8px 0 32px;letter-spac
 .nl input{width:100%;height:44px;border:1px solid var(--bd);border-radius:16px;background:var(--bg);color:var(--t1);padding:0 14px;margin:8px 0 10px}
 .todo{color:var(--t3);font-size:12px}
 footer{border-top:1px solid var(--bd);padding:48px 20px 0;margin-top:0}
-.fg{display:grid;grid-template-columns:1fr;gap:28px}.fg h4{font-size:13px;font-weight:500;margin:0 0 12px}.fg a{display:block;color:var(--t2);margin-bottom:6px}.fg a:hover{color:var(--t1)}
+.fg{display:grid;grid-template-columns:1fr;gap:28px}.fg h2{font-size:13px;font-weight:500;margin:0 0 12px}.fg a{display:block;color:var(--t2);margin-bottom:6px}.fg a:hover{color:var(--t1)}
 .copy{font-size:10px;color:var(--t3);margin-top:32px}
 .huge{display:block;width:100%;margin-top:24px}
 @media(min-width:700px){h1{font-size:48px;line-height:52px}h2{font-size:32px;line-height:36px}.art{aspect-ratio:2/1}.cards,.cardgrid{grid-template-columns:1fr 1fr}.cols{grid-template-columns:1fr 1fr}.fg{grid-template-columns:repeat(3,1fr)}}
@@ -162,7 +162,7 @@ h3{font-family:var(--d)}
 .cg-intro{font-size:17px}
 .bb p{font-size:16px}
 /* footer */
-.fg h4{font:800 15px/1 var(--d);letter-spacing:.12em;text-transform:uppercase}.fg a{font-size:15px}
+.fg h2{font:800 15px/1 var(--d);letter-spacing:.12em;text-transform:uppercase}.fg a{font-size:15px}
 .amz-f{font-size:12px}.copy{font:600 11px var(--d);letter-spacing:.12em;text-transform:uppercase}
 .huge text{font-family:"Barlow Semi Condensed",ui-sans-serif,sans-serif;font-weight:800}
 /* side nav (desktop) */
@@ -294,3 +294,9 @@ h1,h2,.chg-n,.res-h{overflow-wrap:anywhere}
 .nlbox h2{margin:8px 0 16px;max-width:640px}
 .nlbox h2 span{font-size:15px;line-height:22px;font-weight:400;margin-top:4px}
 @media(min-width:700px){.nlbox{padding:28px}}
+
+/* Match the footer title spacing after using the correct heading level. */
+.fg h2{margin:0 0 12px;letter-spacing:.12em}
+
+/* Distinguish inline source links from adjacent fine print. */
+.fine a{text-decoration:underline;text-underline-offset:.15em}
