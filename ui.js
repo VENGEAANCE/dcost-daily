@@ -3,7 +3,7 @@
 const value = (CONFIG.BEEHIIV_EMBED_URL || '').trim();
 const formId = value.match(/[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}/i)?.[0];
 if (formId) {
- document.querySelectorAll('.nl-embed').forEach((container) => {
+ const loadEmbed = (container) => {
   const observer = new MutationObserver(() => {
    const frame = container.querySelector('iframe');
    if (!frame) return;
@@ -17,7 +17,29 @@ if (formId) {
   loader.src = 'https://subscribe-forms.beehiiv.com/v3/loader.js';
   loader.dataset.beehiivForm = formId;
   container.append(loader);
- });
+ };
+ const containers = document.querySelectorAll('.nl-embed');
+ if ('IntersectionObserver' in window) {
+  const embedObserver = new IntersectionObserver((entries) => {
+   for (const entry of entries) {
+    if (entry.isIntersecting) {
+     embedObserver.unobserve(entry.target);
+     entry.target.querySelectorAll('.nl-embed').forEach(loadEmbed);
+    }
+   }
+  }, {rootMargin: '400px'});
+  // Observe the visible newsletter section, not its initially empty container.
+  for (const container of containers) {
+   const section = container.closest('#newsletter') || container.parentElement;
+   if (!section) {
+    loadEmbed(container);
+    continue;
+   }
+   embedObserver.observe(section);
+  }
+ } else {
+  containers.forEach(loadEmbed);
+ }
 }
 const d=document.querySelector(".disc"),m=document.querySelector(".menu");
 if(d&&m){
