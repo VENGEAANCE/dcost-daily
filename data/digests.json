@@ -1,5 +1,225 @@
 [
  {
+  "date": "2026-11-09",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla adds a Cybertruck shift, but many deposits will be refunded",
+    "takeaway": "Musk said the Cybertruck backlog is far more than Tesla can build before the line shuts in about 8 months, so it will add an extra shift and still return deposits for a lot of buyers.",
+    "source": "Reuters",
+    "url": "https://www.investing.com/news/stock-market-news/tesla-to-refund-many-cybertruck-deposits-as-demand-exceeds-production-musk-says-5010643",
+    "image": null,
+    "imageAlt": "Tesla adds a Cybertruck shift, but many deposits will be refunded",
+    "imageCredit": "Reuters"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Cybercab is getting a 40 kWh pack and a silver color",
+    "takeaway": "Musk said efficiency gains will let Tesla shrink the Cybercab battery from 47.6 kWh to 40 kWh, about 16% smaller, and add a liquid silver finish next to today's gold.",
+    "source": "Not a Tesla App",
+    "url": "https://www.notateslaapp.com/news/4965/musk-silver-cybercab-with-smaller-40-kwh-battery-is-coming",
+    "image": "https://www.notateslaapp.com/img/containers/article_images/robotaxi/cybercab-silver.png/e2086f40380ec6ec096c5766ac122502/cybercab-silver.jpg",
+    "imageAlt": "Cybercab is getting a 40 kWh pack and a silver color",
+    "imageCredit": "Not a Tesla App"
+   },
+   {
+    "tag": "SpaceX",
+    "title": "Starship Flight 15 will try to catch both stages",
+    "takeaway": "SpaceX will attempt the first tower catch of both Super Heavy and the Ship on Flight 15, targeted no earlier than Nov 13, after the Ship deploys 26 Starlink V3 satellites.",
+    "source": "Teslarati",
+    "url": "https://www.teslarati.com/spacex-perform-starship-double-catch-attempt-flight-15/",
+    "image": "https://www.teslarati.com/wp-content/uploads/2026/11/spacex-starship-catch-1000x600.jpg",
+    "imageAlt": "Starship Flight 15 will try to catch both stages",
+    "imageCredit": "Teslarati"
+   },
+   {
+    "tag": "EV",
+    "title": "GM recalls 67,380 EVs over a brake software bug",
+    "takeaway": "Some Lyriq, Blazer EV, Vistiq and Celestiq models can briefly lose braking in a low-speed turn over a bump, and GM will fix it with a free over-the-air or dealer update.",
+    "source": "Motor1",
+    "url": "https://www.motor1.com/news/814525/gm-recalls-blazer-cadillac-brakes/",
+    "image": null,
+    "imageAlt": "GM recalls 67,380 EVs over a brake software bug",
+    "imageCredit": "Motor1"
+   },
+   {
+    "tag": "Charging",
+    "title": "EVgo opens its first Tesla-built Supercharger",
+    "takeaway": "The Chicago site has 12 stalls at up to 325 kW with Magic Dock for NACS and CCS cars, the first of hundreds of Superchargers EVgo plans across the US.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/11/06/evgo-opens-its-first-tesla-superchargers-with-hundreds-more-planned/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/11/EVGo-supercharger-site-Chicago.jpg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "EVgo opens its first Tesla-built Supercharger",
+    "imageCredit": "Electrek"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-06",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla will stop making the Cybertruck in 2027",
+    "takeaway": "Musk said Giga Texas will wind down Cybertruck production around mid-2027 to free capacity for Cybercab robotaxis, with Dallas rides planned later this month.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/06/tesla-will-stop-making-the-cybertruck-in-2027/",
+    "image": "https://techcrunch.com/wp-content/uploads/2024/04/Cybertruck_78-resized.jpeg?resize=1200,800",
+    "imageAlt": "Tesla will stop making the Cybertruck in 2027",
+    "imageCredit": "TechCrunch"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Tesla wants Cybercab NHTSA answers kept secret",
+    "takeaway": "Tesla met NHTSA's Oct 30 Special Order on Cybercab certification but asked to keep the entire filing confidential; the public docket only shows a first-responder guide.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/11/05/tesla-cybercab-nhtsa-sworn-answers-confidential/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/02/Tesla-Cybercab-hero.jpg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "Tesla wants Cybercab NHTSA answers kept secret",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "EV",
+    "title": "BYD's Yangwang U9 Xtreme hits 312 mph",
+    "takeaway": "The all-electric U9 Xtreme reached 503.17 km/h (312.66 mph) on a closed Abu Dhabi highway, the first production car over 500 km/h, per FIA and Guinness.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/11/06/byd-yangwang-u9-xtreme-first-production-car-500-km-h/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/11/BYDs-Yangwang-U9-Xtreme-just-reached-503.17-kmh-312.66-mph.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "BYD's Yangwang U9 Xtreme hits 312 mph",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "EV",
+    "title": "Xpeng starts Mona L05 deliveries, aims for 10,000 in month one",
+    "takeaway": "Xpeng began Mona L05 deliveries with a first-month target of 10,000 units; the SUV starts at 139,800 yuan ($20,820) in China.",
+    "source": "CnEVPost",
+    "url": "https://cnevpost.com/2026/11/05/xpeng-begins-mona-l05-deliveries-targets-10000-1st-month/",
+    "image": "https://cnevpost.com/wp-content/uploads/2026/11/2026110504144687.jpg",
+    "imageAlt": "Xpeng starts Mona L05 deliveries, aims for 10,000 in month one",
+    "imageCredit": "CnEVPost"
+   },
+   {
+    "tag": "AI",
+    "title": "OpenAI launches GPT-6 Cyber for security research",
+    "takeaway": "GPT-6 Cyber scored 48.5% on ExploitGym, up from 32.1% for GPT-5.6 Cyber, and helped find 81 previously unknown high-severity Firefox bugs.",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/introducing-gpt-6-cyber",
+    "image": null,
+    "imageAlt": "OpenAI launches GPT-6 Cyber for security research",
+    "imageCredit": "OpenAI"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-05",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla opens a Berlin engineering hub near Giga Berlin",
+    "takeaway": "The Berlin Tesla Engineering Center opened with about 250 staff, 30 labs and a €100 million investment, consolidating four sites about 30 minutes from Giga Berlin.",
+    "source": "Teslarati",
+    "url": "https://www.teslarati.com/tesla-berlin-btec-engineering-center/",
+    "image": "https://www.teslarati.com/wp-content/uploads/2026/11/tesla-berlin-engineering-cybear-1000x600.jpg",
+    "imageAlt": "Tesla opens a Berlin engineering hub near Giga Berlin",
+    "imageCredit": "Teslarati"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Korea group says Tesla sold FSD most cars can't use",
+    "takeaway": "A consumer group plans a KFTC complaint saying 99% of Teslas Tesla sold in Korea last year cannot legally run FSD because Shanghai-built Model 3 and Y cars lack local approval.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/11/04/tesla-fsd-south-korea-consumer-group-complaint-kftc/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2020/07/Tesla-Korea.jpg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "Korea group says Tesla sold FSD most cars can't use",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "EV",
+    "title": "Germany's EV share hits a record 37% in October",
+    "takeaway": "German buyers registered 94,086 battery-electric cars in October, a record 37% share and more than gasoline and diesel combined for the second month in a row.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/11/04/germany-electric-car-sales-record-37-percent-share/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2025/06/gas-vs-electric.png?resize=1200,628",
+    "imageAlt": "Germany's EV share hits a record 37% in October",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "SpaceX",
+    "title": "SpaceX picks Qualcomm for Starlink Mobile 5G",
+    "takeaway": "SpaceX hired Qualcomm for radios and baseband gear on Starlink Mobile's terrestrial 5G network, with deployment across tens of thousands of U.S. cell sites set to start in 2027.",
+    "source": "Teslarati",
+    "url": "https://www.teslarati.com/spacex-moves-challenge-att-verizon-qualcomm-powered-5g/",
+    "image": "https://www.teslarati.com/wp-content/uploads/2026/11/spacex-qualcomm-1000x600.jpeg",
+    "imageAlt": "SpaceX picks Qualcomm for Starlink Mobile 5G",
+    "imageCredit": "Teslarati"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Giga Texas reportedly adds a night shift",
+    "takeaway": "Drone tracker Joe Tegtmeyer says Tesla is doubling Giga Texas production by adding a night shift, which could help Cybercab output and the Model Y L backlog.",
+    "source": "Not a Tesla App",
+    "url": "https://www.notateslaapp.com/news/4945/tesla-is-reportedly-doubling-production-at-giga-texas",
+    "image": "https://www.notateslaapp.com/img/containers/article_images/giga-factories/5_gigafactorytexas_06.webp/bc5da0640238fdeb8a0cf99bd2ab3d69/5_gigafactorytexas_06.jpg",
+    "imageAlt": "Giga Texas reportedly adds a night shift",
+    "imageCredit": "Not a Tesla App"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-04",
+  "stories": [
+   {
+    "tag": "Tesla",
+    "title": "Tesla caps FSD at 10% over the limit in Europe",
+    "takeaway": "The Dutch regulator RDW approved an update that cuts the system's speed margin from 50% to 10% over the limit and renames FSD Supervised to Tesla Assisted Driving, ahead of an EU vote expected no earlier than December.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/11/03/tesla-assisted-driving-rdw-speed-cap-10-percent-europe/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2021/08/Tesla-Full-Self-Driving-Beta-Hero.jpg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "Tesla caps FSD at 10% over the limit in Europe",
+    "imageCredit": "Electrek"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Tesla's China-made sales rise 10% in October",
+    "takeaway": "Tesla sold 67,829 Shanghai-built Model 3 and Model Y cars in October, up 10.3% from a year ago for a 12th straight month of growth, though down 28.9% from September.",
+    "source": "Reuters",
+    "url": "https://www.investing.com/news/economic-indicators/teslas-chinamade-ev-sales-rise-103-yy-in-october-4994214",
+    "image": null,
+    "imageAlt": "Tesla's China-made sales rise 10% in October",
+    "imageCredit": "Reuters"
+   },
+   {
+    "tag": "Tesla",
+    "title": "Cybercab's new inverter could fit the Model Y",
+    "takeaway": "Tesla engineers told Munro Live the Cybercab's simpler inverter can swap straight into a Model Y drive unit, and its new board and power stage start shipping from Fremont later this year.",
+    "source": "Not a Tesla App",
+    "url": "https://www.notateslaapp.com/news/4939/tesla-model-3y-could-get-an-inverter-upgrade-from-cybercab",
+    "image": "https://www.notateslaapp.com/img/containers/article_images/robotaxi/cybercab-drive-unit-munro-live-walkthrough-2.webp/9519da167564948d6d5b9bb42fc4a838/cybercab-drive-unit-munro-live-walkthrough-2.jpg",
+    "imageAlt": "Cybercab's new inverter could fit the Model Y",
+    "imageCredit": "Not a Tesla App"
+   },
+   {
+    "tag": "SpaceX",
+    "title": "SpaceX opens Starfall capsule to customers",
+    "takeaway": "A new SpaceX page pitches Starfall missions on Starship carrying up to 1,000 kg of payload with 1 kW of power and Starlink connectivity for weeks of microgravity, with no price listed yet.",
+    "source": "Teslarati",
+    "url": "https://www.teslarati.com/spacexs-starfall-just-went-from-secret-to-storefront/",
+    "image": "https://www.teslarati.com/wp-content/uploads/2026/10/spacex-starfall-capsule-1000x600.jpg",
+    "imageAlt": "SpaceX opens Starfall capsule to customers",
+    "imageCredit": "Teslarati"
+   },
+   {
+    "tag": "EV",
+    "title": "Kia sets an October record as the $30K EV3 lands",
+    "takeaway": "Kia sold 80,008 US vehicles in October, up 16%, as its new EV3 starting at $29,890 with up to 321 miles of range reached dealers nationwide.",
+    "source": "Electrek",
+    "url": "https://electrek.co/2026/11/03/kia-racks-up-another-record-month-new-30k-ev3-hits-dealers/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/11/Kia-record-US-sales-EV3.jpeg?quality=82&strip=all&resize=1200,628",
+    "imageAlt": "Kia sets an October record as the $30K EV3 lands",
+    "imageCredit": "Electrek"
+   }
+  ]
+ },
+ {
   "date": "2026-11-03",
   "stories": [
    {

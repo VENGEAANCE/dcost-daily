@@ -7,6 +7,7 @@ dcostdaily.com is "dcost daily": a static site (plain HTML, CSS and JS, no frame
 The `redesign-fullcharge` branch is the "Full Charge" restyle: black base, white text, Tesla blue accent, mint for EV savings, Barlow fonts, battery-cell wordmark. Keep refining the look and make it consistent on every page, at 1280 and 390 widths.
 
 ## Rules
+- Publishing source of truth is GitHub `main`. Read `docs/PUBLISHING.md` before any release. Use `scripts/deploy.sh --approved-commit FULL_APPROVED_HEAD_SHA` after direct approval; never publish a stale independent workspace. Preserve newer live data and record release provenance.
 - Keep every live route working: `/`, `/chargers`, `/calculator`, `/archive`, `/ev-cost/*`, `/ev-vs-gas/*`, `/compare/*`, `/tesla/*`, `/guides/*`, `robots.txt`, `sitemap.xml` and the 404 page.
 - Keep the live data: `data/*.json`, `chargers.js` picks and the `dcostdaily-20` Amazon tag in `config.js`. Do not hardcode numbers that `data/rates.json` supplies.
 - Generated pages come from `scripts/gen_pages.py` and `scripts/gen_compare.py`. Change the generator, then regenerate, instead of hand-editing generated HTML.
