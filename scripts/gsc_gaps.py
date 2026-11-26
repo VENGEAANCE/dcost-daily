@@ -22,7 +22,7 @@ LOW_INTENT = set("news digest archive newsletter login dcostdaily".split())
 
 
 def terms(value):
-    value = re.sub(r"\belectric vehicles?\b", "ev", value.lower())
+    value = re.sub(r"\belectric vehicles?\b", "ev", value.lower().replace("d'cost", "dcostdaily"))
     return frozenset(SYNONYMS.get(w, w) for w in re.findall(r"[a-z0-9]+", value) if w not in STOP)
 
 
@@ -168,7 +168,7 @@ def report(folder, start, end):
                       f"{action}: {target}. Charger picks: {'yes' if picks else 'no'}.", ""])
     if not opportunities:
         lines.append("No qualifying opportunities in this export.")
-    return "\n".join(lines) + "\n"
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def main():

@@ -63,17 +63,16 @@ Baseline: 1 impressions, 0 clicks, best average position 73.00.
 Current URL: unknown. No dedicated page matched.
 Review new guide: /guides/cost-of-tesla-charger-in-fort-collins. Charger picks: yes.
 
-## 9. d'cost
-
-Queries: d'cost
-Baseline: 1 impressions, 0 clicks, best average position 8.00.
-Current URL: unknown. No dedicated page matched.
-Review new guide: /guides/d-cost. Charger picks: no.
-
-## 10. does a tesla cost less to fuel than a toyota?
+## 9. does a tesla cost less to fuel than a toyota?
 
 Queries: does a tesla cost less to fuel than a toyota?
 Baseline: 1 impressions, 0 clicks, best average position 1.00.
 Current URL: unknown. No dedicated page matched.
 Review new guide: /guides/does-a-tesla-cost-less-to-fuel-than-a-toyota. Charger picks: no.
 
+## 10. ev cost estimator
+
+Queries: ev cost estimator
+Baseline: 1 impressions, 0 clicks, best average position 96.00.
+Current URL: unknown. No dedicated page matched.
+Review new guide: /guides/ev-cost-estimator. Charger picks: no.
