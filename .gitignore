@@ -6,3 +6,4 @@ node_modules/
 *.key
 SETUP.md
 affiliate-signup-*.md
+data/gsc/*.csv
