@@ -155,7 +155,8 @@ def report(folder, start, end):
         opportunities.append((-impressions, target, [r["query"] for r in queries_sorted],
                               sum(r["clicks"] for r in rows), best, majority or destination,
                               reason, action, charger))
-    lines = ["# Search Console content gaps", "", f"Export period {start} through {end}.",
+    lines = ["# Search Console content gaps", "",
+             "These are automated candidates. See the [editorial decision](review.md) for the reviewed export.", "", f"Export period {start} through {end}.",
              f"Rows: {len(queries)} queries, {len(page_rows)} pages, {len(pairs)} query/page pairs.", "",
              "Queries with equal normalized terms form a cluster. Opportunities are ordered by total impressions. "
              "Position is the best query average in the cluster. Without query/page attribution, the current URL "
